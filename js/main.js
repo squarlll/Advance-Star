@@ -2,10 +2,10 @@ $(document).ready(function(){
 	$(document).on("scroll", function(){
 		if($(document).scrollTop()>0){
 			$('.header').addClass('header_small');
-			$('.header__logo img').attr('src', 'img/logo-scroll.png');
+			$('.header__logo img').attr('src', 'img/logo-scroll.svg');
 		} else{
 			$('.header').removeClass("header_small");
-			$('.header__logo img').attr('src', 'img/logo.png');
+			$('.header__logo img').attr('src', 'img/logo.svg');
 		}
 	});
 	// popup

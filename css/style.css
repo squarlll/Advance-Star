@@ -1989,6 +1989,7 @@ html.lock body {
   display: flex;
   flex-wrap: wrap;
   margin: 34px auto 0;
+  width: 100%;
 }
 
 .images__item {
@@ -2081,6 +2082,7 @@ html.lock body {
 
 .images__item .images__statistics div img {
   margin: 0 10px 0 0;
+  position: relative;
 }
 
 .images__item .images__statistics div:not(:first-child) {

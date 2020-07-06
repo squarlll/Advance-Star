@@ -10,13 +10,23 @@
 	<!-- popup -->
 	<div class="popup-wrapper">
 		<div class="popup__area"></div>
-		<div class="popup">
+		<div class="popup popup_1">
 			<div class="popup__container">
 				<button class="popup__close-button"><img src="img/popup-close.svg" alt=""></button>
 				<div class="popup__thank">Спасибо!<br>Мы приняли вашу заявку</div>
 				<div class="popup__image"><img src="img/popup-done.svg" alt=""></div>
 				<div class="popup__text">«Наш консультант свяжется с вами в течение 15 мин в рабочее время и ответит на все вопросы»</div>
 			</div>
+		</div>
+		<div class="popup__form-wrapper">
+			<button class="popup__close-button"><img src="img/popup-close.svg" alt=""></button>
+			<div class="popup__text">Оставьте заявку сегодня и получите <span>скидку 10%</span>  на все виды услуг детейлинг-центра!</div>
+			<form action="" class="popup__form" onsubmit="return false;">
+				<input class="popup__field" type="text" placeholder="Модель авто *" required>
+				<input class="popup__field" type="text" placeholder="Имя *" required>
+				<input class="popup__field" type="tel" placeholder="Телефон *" required>
+				<input class="popup__button" type="submit" value="Оставить заявку">
+			</form>
 		</div>
 	</div>
 	<!-- / popup -->

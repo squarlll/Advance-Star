@@ -844,7 +844,7 @@ html.lock body {
   margin-top: 30px;
 }
 
-.popup__text {
+.popup__text_1 {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.3333;
@@ -2127,7 +2127,7 @@ html.lock body {
   width: 100%;
   height: 100%;
   background: linear-gradient(360deg, #252525 -0.02%, rgba(37, 37, 37, 0.3) 99.98%);
-  z-index: 3;
+  z-index: 4;
   transition: .35s;
 }
 
@@ -2172,19 +2172,18 @@ html.lock body {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
-  width: 100%;
-  height: 100%;
+  top: 50%;
+  left: 50%;
   opacity: 0;
   visibility: hidden;
-  transform: translateY(10px);
-  transition: .35s;
+  transform: translate(-50%, -50%);
+  transition: 0.35s;
   z-index: 4;
   font-weight: 700;
   font-size: 20px;
   color: #fff;
+  margin-top: 10px;
 }
 
 .images__item .images__statistics div {
@@ -2214,7 +2213,7 @@ html.lock body {
 .images__item:hover .images__statistics {
   opacity: 1;
   visibility: visible;
-  transform: none;
+  margin-top: 0;
   transition: .25s .1s;
 }
 
@@ -2395,6 +2394,7 @@ html.lock body {
   transform: translateX(-50%);
   display: block;
   z-index: -1;
+  min-width: 100%;
 }
 
 .footer:after {
@@ -2542,6 +2542,12 @@ html.lock body {
 
   .detailing__row:nth-child(7) .detailing__icon {
     flex: 1 0 206px;
+  }
+}
+
+@media screen and (min-width: 861px) {
+  .map__form-wrapper {
+    margin-top: -102px;
   }
 }
 

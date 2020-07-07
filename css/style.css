@@ -1785,7 +1785,7 @@ html.lock body {
   padding: 50px 0;
   margin-top: 50px;
   min-height: 600px;
-  background: url("../img/about-bg.jpg") no-repeat center/cover;
+  background: url("../img/about-bg.png") no-repeat center/cover;
   text-align: center;
 }
 

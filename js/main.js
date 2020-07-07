@@ -287,8 +287,8 @@ $(document).ready(function(){
 		$(this).children('g').children('.slider-next-path').animatePathD('M22.0057 33.9331L29.0505 28.2092C29.5431 27.809 29.5431 27.0572 29.0505 26.657L22.0057 20.9331');
 	});
 	new WOW().init();
-	var mySwiper2 = new Swiper ('.swiper_1', {
-		direction: 'vertical',
+	var mySwiper1 = new Swiper ('.swiper_1', {
+		direction: 'horizontal',
 		loop: false,
 		speed: 700,
 		spaceBetween: 15,
@@ -298,16 +298,21 @@ $(document).ready(function(){
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev',
 		},
+		breakpoints: {
+			940: {
+				direction: 'vertical'
+			}
+		}
 	});
-	var mySwiper1 = new Swiper ('.swiper_2', {
+	var mySwiper2 = new Swiper ('.swiper_2', {
 		direction: 'horizontal',
 		loop: false,
 		spaceBetween: 50,
 		allowSlidePrev: 'swiper-button-prev',
 		allowSlideNext: 'swiper-button-next',
 		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
+			nextEl: '.swiper-button-next_1',
+			prevEl: '.swiper-button-prev_1',
 		},
 	});
 });

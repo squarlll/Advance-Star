@@ -1487,9 +1487,12 @@ html.lock body {
   display: block;
 }
 
+.solution__slider-wrapper {
+  margin-left: 15px;
+}
+
 .solution__video {
   position: relative;
-  margin-left: 15px;
 }
 
 .solution__video video {
@@ -1507,6 +1510,20 @@ html.lock body {
   z-index: 3;
   max-width: 100%;
   max-height: 100%;
+}
+
+.slider_1__buttons .swiper-button-prev {
+  top: -70px;
+  left: 50%;
+  transform: translateX(-50%) rotate(90deg);
+}
+
+.slider_1__buttons .swiper-button-next {
+  bottom: -70px;
+  top: auto;
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%) rotate(90deg);
 }
 
 .stages {
@@ -1906,7 +1923,7 @@ html.lock body {
   z-index: -1;
 }
 
-.swiper-container {
+.swiper_2 {
   margin-top: 50px;
   width: 100%;
 }
@@ -1944,6 +1961,11 @@ html.lock body {
   bottom: 0;
   left: 0;
   z-index: 3;
+}
+
+.swiper_1 {
+  max-height: 301px;
+  overflow-y: hidden;
 }
 
 .swiper-button-prev {
@@ -3704,7 +3726,7 @@ html.lock body {
     margin-top: 30px;
   }
 
-  .swiper-container {
+  .swiper_2 {
     margin-top: 30px;
   }
 
@@ -3728,7 +3750,7 @@ html.lock body {
     height: 150px;
   }
 
-  .slider_1__wrapper .slider_1__buttons {
+  .slider_1__wrapper .slider_2__buttons {
     order: 2;
   }
 

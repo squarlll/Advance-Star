@@ -992,9 +992,11 @@ html.lock{
             }
         }
     }
+    &__slider-wrapper{
+        margin-left: 15px;
+    }
     &__video{
         position: relative;
-        margin-left: 15px;
         & video{
             border-radius: 10px;
             width: 601px;
@@ -1027,6 +1029,18 @@ html.lock{
         }
     }
     @include fz;
+}
+.slider_1__buttons .swiper-button-prev{
+    top: -70px;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+}
+.slider_1__buttons .swiper-button-next{
+    bottom: -70px;
+    top: auto;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%) rotate(90deg);
 }
 // / solution
 // stages
@@ -1620,7 +1634,7 @@ html.lock{
         margin-top: 30px;
     }
 }
-.swiper-container{
+.swiper_2{
     margin-top: 50px;
     width: 100%;
     @media screen and (max-width: 570px){
@@ -1689,6 +1703,10 @@ html.lock{
         }
     }
 }
+.swiper_1{
+    max-height: 301px;
+    overflow-y: hidden;
+}
 .swiper-button-prev{
     background: url('../../img/slider/swiper-prev.svg') no-repeat center / contain;
     &:after{
@@ -1733,7 +1751,7 @@ html.lock{
     @media screen and (max-width: 570px){
         width: 300px;
         height: 150px;
-        .slider_1__buttons{
+        .slider_2__buttons{
             order: 2;
         }
         .swiper-button-prev{

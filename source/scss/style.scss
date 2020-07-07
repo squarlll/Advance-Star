@@ -114,12 +114,7 @@ body {
     right: 0;
 }
 html.lock{
-    overflow-y: scroll;
-    height: 100vh;
-    & body{
-        overflow: hidden;
-        height: 100vh;
-    }
+    overflow-y: hidden;
 }
 .container{
     width: 1170px;

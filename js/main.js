@@ -118,4 +118,23 @@ $(document).on("scroll", function(){
 		$('.header').removeClass("header_small");
 		$('.header__logo img').attr('src', 'img/logo.svg');
 	}
+	if($(document).scrollTop()>300){
+		$('.scroll__button').addClass('active');
+	} else{
+		$('.scroll__button').removeClass('active');
+	}
 });
+$('.scroll__button').on('click', function(){
+	$('html').animate({scrollTop: 0}, 1000)
+});
+// back to top
+// function backToTop() {
+// 	let button = $('.scroll__button');
+// 	$(window).on('scroll', () => {
+// 		if ($(this).scrollTop() >= 50) {
+// 			button.fadeIn();
+// 		} else {
+// 			button.fadeOut();
+// 		}
+// 	});
+// }

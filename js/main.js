@@ -128,14 +128,3 @@ $('.scroll__button').on('click', function(e){
 	e.preventDefault();
 	$('html').animate({scrollTop: 0}, 1000)
 });
-// back to top
-// function backToTop() {
-// 	let button = $('.scroll__button');
-// 	$(window).on('scroll', () => {
-// 		if ($(this).scrollTop() >= 50) {
-// 			button.fadeIn();
-// 		} else {
-// 			button.fadeOut();
-// 		}
-// 	});
-// }

@@ -758,10 +758,10 @@ html.lock {
 }
 
 .button:hover {
-  box-shadow: inset 2px 0 #693490, inset -2px 0 #693490, inset 0 2px #693490, inset 0 -2px #693490;
-  border-radius: 5px;
-  background: none;
-  color: #693490;
+  box-shadow: inset 2px 0 #693490, inset -2px 0 #693490, inset 0 2px #693490, inset 0 -2px #693490 !important;
+  border-radius: 5px !important;
+  background: none !important;
+  color: #693490 !important;
 }
 
 .container {

@@ -1373,7 +1373,6 @@ html.lock {
   border-radius: 10px;
   overflow: hidden;
   min-height: 367px;
-  height: 100%;
   margin-top: 11px;
   position: relative;
 }
@@ -1801,8 +1800,13 @@ html.lock {
 	overflow: hidden;
 }
 @media screen and (max-width: 1600px){
-	.images__slide-wrapper{
+  .images__slide-wrapper{
     height: 150px;
+  }
+}
+@media screen and (max-width: 630px){
+  .images__slide-wrapper{
+    height: 200px;
   }
 }
 .images__slide img{

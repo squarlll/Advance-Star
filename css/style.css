@@ -1210,6 +1210,10 @@ html.lock {
   border: none;
 }
 
+.main__form .form__submit:hover {
+  color: #fff !important;
+}
+
 .main__form form {
   margin-top: 30px;
   display: -moz-flex;

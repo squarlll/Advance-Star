@@ -124,7 +124,8 @@ $(document).on("scroll", function(){
 		$('.scroll__button').removeClass('active');
 	}
 });
-$('.scroll__button').on('click', function(){
+$('.scroll__button').on('click', function(e){
+	e.preventDefault();
 	$('html').animate({scrollTop: 0}, 1000)
 });
 // back to top

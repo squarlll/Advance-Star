@@ -618,21 +618,21 @@ html.lock {
   overflow-y: hidden;
 }
 .button{
-	background: #693490;
-	border-radius: 5px;
-	font-size: 16px;
-	line-height: 1.25;
-	color: #fff;
-	padding: 16px 39px;
-	font-weight: 700;
+	background: #693490!important;
+	border-radius: 5px!important;
+	font-size: 16px!important;
+	line-height: 1.25!important;
+	color: #fff!important;
+	padding: 16px 39px!important;
+	font-weight: 700!important;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
 	justify-content: center;
-	transition: background 0.3s, color 0.3s, box-shadow 0s;
-	border: none;
-	box-shadow: 0px 0px 30px rgba(105, 52, 144, 0.5), inset 0px 3px 4px rgba(255, 255, 255, 0.3), inset 0px -3px 2px rgba(0, 0, 0, 0.35);
+	transition: background 0.3s, color 0.3s, box-shadow 0s!important;
+	border: none!important;
+	box-shadow: 0px 0px 30px rgba(105, 52, 144, 0.5), inset 0px 3px 4px rgba(255, 255, 255, 0.3), inset 0px -3px 2px rgba(0, 0, 0, 0.35)!important;
 }
 .button:hover{
 	box-shadow: inset 2px 0 #693490, inset -2px 0 #693490, inset 0 2px #693490, inset 0 -2px #693490;
@@ -1791,19 +1791,19 @@ html.lock {
 	justify-content: center;
 	-ms-align-items: center;
 	align-items: center;
-	height: 270px;
+	height: 180px;
 	border-radius: 10px;
 	background: #C4C4C4;
 	overflow: hidden;
 }
 @media screen and (max-width: 1600px){
 	.images__slide-wrapper{
-    height: 210px;
+    height: 150px;
   }
 }
 .images__slide img{
 	min-height: 100%;
-	max-width: calc(100% + 150px);
+	max-width: 100%;
 }
 .map {
   max-width: 1170px;
@@ -3052,6 +3052,12 @@ html.lock {
 	border-radius: 50%;
 	position: relative;
 	animation: pulse1 1.5s 4s ease-in-out infinite;
+}
+@media screen and (max-width: 570px){
+  .play-button__pulse{
+    width: 60px;
+    height: 60px;
+  }
 }
 .play-button__pulse:before{
 	content: '';

@@ -622,7 +622,7 @@ html.lock {
 	border-radius: 5px;
 	font-size: 16px;
 	line-height: 1.25;
-	color: #fff;
+	color: #fff!important;
 	padding: 16px 39px;
 	font-weight: 700;
 	display: -moz-flex;

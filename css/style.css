@@ -3295,9 +3295,9 @@ html.lock {
   }
 
   .main__form .form__item {
-    font-size: 12px;
-    line-height: 20px;
-    padding: 16px 20px 16px;
+    font-size: 12px !important;
+    line-height: 20px !important;
+    padding: 16px 20px 16px !important;
   }
 
   .main__form .form__item:nth-child(3) {

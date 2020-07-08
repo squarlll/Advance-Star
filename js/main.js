@@ -29,226 +29,6 @@ $(document).ready(function(){
 			$('.popup-wrapper, .popup_1, .popup__form-wrapper').removeClass('active');
 		});
 	});
-	var counter = 0;
-	$('.images__arrow').on('click', function(){
-	    // counter++;
-	    // if (counter > 2) {
-		   //  $('.images__slide_2-img').fadeOut(600);
-		   //  $('.images__slide-img').fadeIn(600);
-		   //  $('.images__item_1').attr('href', 'img/images/image_6.jpg');
-		   //  $('.images__item_1').attr('href', 'img/images/image_7.jpg');
-		   //  $('.images__item_1').attr('href', 'img/images/image_8.jpg');
-		   //  $('.images__item_1').attr('href', 'img/images/image_9.jpg');
-		   //  $('.images__item_1').attr('href', 'img/images/image_10.jpg');
-	    // } else {
-	    //     $('.images__slide-img').fadeOut(600);
-	    //     $('.images__slide_1-img').fadeIn(600);
-	    //     $('.images__item_1').attr('href', 'img/images/image_6.jpg');
-	    //     $('.images__item_1').attr('href', 'img/images/image_7.jpg');
-	    //     $('.images__item_1').attr('href', 'img/images/image_8.jpg');
-	    //     $('.images__item_1').attr('href', 'img/images/image_9.jpg');
-	    //     $('.images__item_1').attr('href', 'img/images/image_10.jpg');
-	    //     $('.images__arrow').on('click', function(){
-	    //     $('.images__slide_1-img').fadeOut(600);
-	    //     $('.images__slide_2-img').fadeIn(600);
-	    //     $('.images__item_1').attr('href', 'img/images/image_11.jpg');
-	    //     $('.images__item_1').attr('href', 'img/images/image_12.jpg');
-	    //     $('.images__item_1').attr('href', 'img/images/image_13.jpg');
-	    //     $('.images__item_1').attr('href', 'img/images/image_14.jpg');
-	    //     $('.images__item_1').attr('href', 'img/images/image_15.jpg');
-	    //     });
-	    // }
-	    counter++;
-	    if (counter === 1) {
-			$('.images__slide-img').fadeOut(600);
-			$('.images__slide_1-img').fadeIn(600);
-			$('.images__item_1').attr('href', 'img/images/image_1.jpg');
-			$('.images__item_2').attr('href', 'img/images/image_2.jpg');
-			$('.images__item_3').attr('href', 'img/images/image_3.jpg');
-			$('.images__item_4').attr('href', 'img/images/image_4.jpg');
-			$('.images__item_5').attr('href', 'img/images/image_5.jpg');
-		}
-	    if (counter === 2) {
-			$('.images__slide_1-img').fadeOut(600);
-			$('.images__slide_2-img').fadeIn(600);
-			$('.images__item_1').attr('href', 'img/images/image_1.jpg');
-			$('.images__item_2').attr('href', 'img/images/image_2.jpg');
-			$('.images__item_3').attr('href', 'img/images/image_3.jpg');
-			$('.images__item_4').attr('href', 'img/images/image_4.jpg');
-			$('.images__item_5').attr('href', 'img/images/image_5.jpg');
-		}
-	    if (counter === 3) {
-			$('.images__slide_2-img').fadeOut(600);
-			$('.images__slide-img').fadeIn(600);
-			$('.images__item_1').attr('href', 'img/images/image_1.jpg');
-			$('.images__item_2').attr('href', 'img/images/image_2.jpg');
-			$('.images__item_3').attr('href', 'img/images/image_3.jpg');
-			$('.images__item_4').attr('href', 'img/images/image_4.jpg');
-			$('.images__item_5').attr('href', 'img/images/image_5.jpg');
-		}
-	    if (counter === 4) {
-			$('.images__slide-img').fadeOut(600);
-			$('.images__slide_1-img').fadeIn(600);
-			$('.images__item_1').attr('href', 'img/images/image_6.jpg');
-			$('.images__item_2').attr('href', 'img/images/image_7.jpg');
-			$('.images__item_3').attr('href', 'img/images/image_8.jpg');
-			$('.images__item_4').attr('href', 'img/images/image_9.jpg');
-			$('.images__item_5').attr('href', 'img/images/image_10.jpg');
-	    }
-	    if (counter === 5) {
-			$('.images__slide_1-img').fadeOut(600);
-			$('.images__slide_2-img').fadeIn(600);
-			$('.images__item_1').attr('href', 'img/images/image_1.jpg');
-			$('.images__item_2').attr('href', 'img/images/image_2.jpg');
-			$('.images__item_3').attr('href', 'img/images/image_3.jpg');
-			$('.images__item_4').attr('href', 'img/images/image_4.jpg');
-			$('.images__item_5').attr('href', 'img/images/image_5.jpg');
-		}
-	    if (counter === 6) {
-			$('.images__slide_2-img').fadeOut(600);
-			$('.images__slide-img').fadeIn(600);
-			$('.images__item_1').attr('href', 'img/images/image_1.jpg');
-			$('.images__item_2').attr('href', 'img/images/image_2.jpg');
-			$('.images__item_3').attr('href', 'img/images/image_3.jpg');
-			$('.images__item_4').attr('href', 'img/images/image_4.jpg');
-			$('.images__item_5').attr('href', 'img/images/image_5.jpg');
-		}
-	    if (counter === 7) {
-			$('.images__slide-img').fadeOut(600);
-			$('.images__slide_1-img').fadeIn(600);
-			$('.images__item_1').attr('href', 'img/images/image_6.jpg');
-			$('.images__item_2').attr('href', 'img/images/image_7.jpg');
-			$('.images__item_3').attr('href', 'img/images/image_8.jpg');
-			$('.images__item_4').attr('href', 'img/images/image_9.jpg');
-			$('.images__item_5').attr('href', 'img/images/image_10.jpg');
-	    }
-	    if (counter === 8) {
-			$('.images__slide_1-img').fadeOut(600);
-			$('.images__slide_2-img').fadeIn(600);
-			$('.images__item_1').attr('href', 'img/images/image_1.jpg');
-			$('.images__item_2').attr('href', 'img/images/image_2.jpg');
-			$('.images__item_3').attr('href', 'img/images/image_3.jpg');
-			$('.images__item_4').attr('href', 'img/images/image_4.jpg');
-			$('.images__item_5').attr('href', 'img/images/image_5.jpg');
-		}
-	    if (counter === 9) {
-			$('.images__slide_2-img').fadeOut(600);
-			$('.images__slide-img').fadeIn(600);
-			$('.images__item_1').attr('href', 'img/images/image_1.jpg');
-			$('.images__item_2').attr('href', 'img/images/image_2.jpg');
-			$('.images__item_3').attr('href', 'img/images/image_3.jpg');
-			$('.images__item_4').attr('href', 'img/images/image_4.jpg');
-			$('.images__item_5').attr('href', 'img/images/image_5.jpg');
-		}
-	    if (counter === 10) {
-			$('.images__slide-img').fadeOut(600);
-			$('.images__slide_1-img').fadeIn(600);
-			$('.images__item_1').attr('href', 'img/images/image_6.jpg');
-			$('.images__item_2').attr('href', 'img/images/image_7.jpg');
-			$('.images__item_3').attr('href', 'img/images/image_8.jpg');
-			$('.images__item_4').attr('href', 'img/images/image_9.jpg');
-			$('.images__item_5').attr('href', 'img/images/image_10.jpg');
-	    }
-	    if (counter === 11) {
-			$('.images__slide_1-img').fadeOut(600);
-			$('.images__slide_2-img').fadeIn(600);
-			$('.images__item_1').attr('href', 'img/images/image_1.jpg');
-			$('.images__item_2').attr('href', 'img/images/image_2.jpg');
-			$('.images__item_3').attr('href', 'img/images/image_3.jpg');
-			$('.images__item_4').attr('href', 'img/images/image_4.jpg');
-			$('.images__item_5').attr('href', 'img/images/image_5.jpg');
-		}
-	    if (counter === 12) {
-			$('.images__slide_2-img').fadeOut(600);
-			$('.images__slide-img').fadeIn(600);
-			$('.images__item_1').attr('href', 'img/images/image_1.jpg');
-			$('.images__item_2').attr('href', 'img/images/image_2.jpg');
-			$('.images__item_3').attr('href', 'img/images/image_3.jpg');
-			$('.images__item_4').attr('href', 'img/images/image_4.jpg');
-			$('.images__item_5').attr('href', 'img/images/image_5.jpg');
-		}
-	    if (counter === 13) {
-			$('.images__slide-img').fadeOut(600);
-			$('.images__slide_1-img').fadeIn(600);
-			$('.images__item_1').attr('href', 'img/images/image_6.jpg');
-			$('.images__item_2').attr('href', 'img/images/image_7.jpg');
-			$('.images__item_3').attr('href', 'img/images/image_8.jpg');
-			$('.images__item_4').attr('href', 'img/images/image_9.jpg');
-			$('.images__item_5').attr('href', 'img/images/image_10.jpg');
-	    }
-	    if (counter === 14) {
-			$('.images__slide_1-img').fadeOut(600);
-			$('.images__slide_2-img').fadeIn(600);
-			$('.images__item_1').attr('href', 'img/images/image_1.jpg');
-			$('.images__item_2').attr('href', 'img/images/image_2.jpg');
-			$('.images__item_3').attr('href', 'img/images/image_3.jpg');
-			$('.images__item_4').attr('href', 'img/images/image_4.jpg');
-			$('.images__item_5').attr('href', 'img/images/image_5.jpg');
-		}
-	    if (counter === 15) {
-			$('.images__slide_2-img').fadeOut(600);
-			$('.images__slide-img').fadeIn(600);
-			$('.images__item_1').attr('href', 'img/images/image_1.jpg');
-			$('.images__item_2').attr('href', 'img/images/image_2.jpg');
-			$('.images__item_3').attr('href', 'img/images/image_3.jpg');
-			$('.images__item_4').attr('href', 'img/images/image_4.jpg');
-			$('.images__item_5').attr('href', 'img/images/image_5.jpg');
-		}
-	    if (counter === 16) {
-			$('.images__slide-img').fadeOut(600);
-			$('.images__slide_1-img').fadeIn(600);
-			$('.images__item_1').attr('href', 'img/images/image_6.jpg');
-			$('.images__item_2').attr('href', 'img/images/image_7.jpg');
-			$('.images__item_3').attr('href', 'img/images/image_8.jpg');
-			$('.images__item_4').attr('href', 'img/images/image_9.jpg');
-			$('.images__item_5').attr('href', 'img/images/image_10.jpg');
-	    }
-	    if (counter === 17) {
-			$('.images__slide_1-img').fadeOut(600);
-			$('.images__slide_2-img').fadeIn(600);
-			$('.images__item_1').attr('href', 'img/images/image_1.jpg');
-			$('.images__item_2').attr('href', 'img/images/image_2.jpg');
-			$('.images__item_3').attr('href', 'img/images/image_3.jpg');
-			$('.images__item_4').attr('href', 'img/images/image_4.jpg');
-			$('.images__item_5').attr('href', 'img/images/image_5.jpg');
-		}
-	    if (counter === 18) {
-			$('.images__slide_2-img').fadeOut(600);
-			$('.images__slide-img').fadeIn(600);
-			$('.images__item_1').attr('href', 'img/images/image_1.jpg');
-			$('.images__item_2').attr('href', 'img/images/image_2.jpg');
-			$('.images__item_3').attr('href', 'img/images/image_3.jpg');
-			$('.images__item_4').attr('href', 'img/images/image_4.jpg');
-			$('.images__item_5').attr('href', 'img/images/image_5.jpg');
-		}
-	    if (counter === 19) {
-			$('.images__slide-img').fadeOut(600);
-			$('.images__slide_1-img').fadeIn(600);
-			$('.images__item_1').attr('href', 'img/images/image_6.jpg');
-			$('.images__item_2').attr('href', 'img/images/image_7.jpg');
-			$('.images__item_3').attr('href', 'img/images/image_8.jpg');
-			$('.images__item_4').attr('href', 'img/images/image_9.jpg');
-			$('.images__item_5').attr('href', 'img/images/image_10.jpg');
-	    }
-	    if (counter === 20) {
-			$('.images__slide_1-img').fadeOut(600);
-			$('.images__slide_2-img').fadeIn(600);
-			$('.images__item_1').attr('href', 'img/images/image_1.jpg');
-			$('.images__item_2').attr('href', 'img/images/image_2.jpg');
-			$('.images__item_3').attr('href', 'img/images/image_3.jpg');
-			$('.images__item_4').attr('href', 'img/images/image_4.jpg');
-			$('.images__item_5').attr('href', 'img/images/image_5.jpg');
-		}
-	    if (counter === 21) {
-			$('.images__slide_2-img').fadeOut(600);
-			$('.images__slide-img').fadeIn(600);
-			$('.images__item_1').attr('href', 'img/images/image_1.jpg');
-			$('.images__item_2').attr('href', 'img/images/image_2.jpg');
-			$('.images__item_3').attr('href', 'img/images/image_3.jpg');
-			$('.images__item_4').attr('href', 'img/images/image_4.jpg');
-			$('.images__item_5').attr('href', 'img/images/image_5.jpg');
-		}
-	});
 	$('img, a').on('dragstart', function(event) { event.preventDefault(); });
 	$('.solution__video').on('click', function(){
 		$(this).children('video').trigger('play');
@@ -286,14 +66,13 @@ $(document).ready(function(){
 	$('.slider-next-btn').on('mouseleave', function(){
 		$(this).children('g').children('.slider-next-path').animatePathD('M22.0057 33.9331L29.0505 28.2092C29.5431 27.809 29.5431 27.0572 29.0505 26.657L22.0057 20.9331');
 	});
+	$(".lightgallery").lightGallery(); 
 	new WOW().init();
 	var mySwiper1 = new Swiper ('.swiper_1', {
 		direction: 'horizontal',
 		loop: false,
 		speed: 700,
 		spaceBetween: 15,
-		allowSlidePrev: 'swiper-button-prev',
-		allowSlideNext: 'swiper-button-next',
 		navigation: {
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev',
@@ -307,12 +86,40 @@ $(document).ready(function(){
 	var mySwiper2 = new Swiper ('.swiper_2', {
 		direction: 'horizontal',
 		loop: false,
+		speed: 500,
 		spaceBetween: 50,
-		allowSlidePrev: 'swiper-button-prev',
-		allowSlideNext: 'swiper-button-next',
 		navigation: {
 			nextEl: '.swiper-button-next_1',
 			prevEl: '.swiper-button-prev_1',
 		},
+	});
+	var images = new Swiper ('.images__slider', {
+		direction: 'horizontal',
+		slidesPerView: 4,
+		loop: false,
+		speed: 400,
+		spaceBetween: 10,
+		navigation: {
+			nextEl: '.swiper-button-next_2',
+			prevEl: '.swiper-button-prev_2',
+		},
+		breakpoints: {
+			1601: {
+				spaceBetween: 30
+			},
+			1141: {
+				slidesPerView: 4
+			},
+			881: {
+				slidesPerView: 3
+			},
+			631: {
+				spaceBetween: 10,
+				slidesPerView: 2
+			},
+			0: {
+				slidesPerView: 1
+			}
+		}
 	});
 });

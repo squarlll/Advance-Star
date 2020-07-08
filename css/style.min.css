@@ -1373,6 +1373,7 @@ html.lock {
   border-radius: 10px;
   overflow: hidden;
   min-height: 367px;
+  height: 100%;
   margin-top: 11px;
   position: relative;
 }

@@ -32,11 +32,7 @@ $(document).ready(function(){
 	$('img, a').on('dragstart', function(event) { event.preventDefault(); });
 	$('.solution__video').on('click', function(){
 		$(this).children('video').trigger('play');
-		$(this).children('.video__poster').css('display', 'none');
-	});
-	$('.slider_1__slide').on('click', function(){
-		$(this).children('.slider_1__video').trigger('play');
-		$(this).children('.slider_1__video').addClass('play')
+		$(this).children('.play-button').css('display', 'none');
 		$(this).children('.video__poster').css('display', 'none');
 	});
 
@@ -66,7 +62,7 @@ $(document).ready(function(){
 	$('.slider-next-btn').on('mouseleave', function(){
 		$(this).children('g').children('.slider-next-path').animatePathD('M22.0057 33.9331L29.0505 28.2092C29.5431 27.809 29.5431 27.0572 29.0505 26.657L22.0057 20.9331');
 	});
-	$(".lightgallery").lightGallery(); 
+	$('.lightgallery').lightGallery(); 
 	new WOW().init();
 	var mySwiper1 = new Swiper ('.swiper_1', {
 		direction: 'horizontal',

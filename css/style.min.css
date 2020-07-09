@@ -640,6 +640,7 @@ html.lock {
 	background: none;
 	color: #693490!important;
 }
+/* scroll button */
 .scroll__button{
 	position: fixed;
 	right: 0;
@@ -660,6 +661,45 @@ html.lock {
 	-o-transform: none;
 	transform: none;
 	opacity: 1;
+}
+/* call mobile */
+.call__button{
+  max-width: 100%;
+  width: 250px;
+  margin: 0 auto;
+  padding: 14px 39px;
+}
+.call__button-wrapper{
+  width: 100%;
+  height: 70px;
+  display: none;
+  -ms-align-items: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 7;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 6px 0px;
+}
+@media screen and (max-width: 768px) and (orientation: portrait){
+  .call__button-wrapper{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+  }
+}
+@media screen and (max-width: 1024px) and (orientation: landscape){
+  .call__button-wrapper{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+  }
 }
 .container {
   width: 1170px;

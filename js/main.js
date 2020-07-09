@@ -123,7 +123,7 @@ $(document).on("scroll", function(){
 	} else{
 		$('.scroll__button').removeClass('active');
 	}
-	if($(document).scrollTop()>8000){
+	if($(document).scrollTop()>7200){
 		$('.call__button-wrapper').addClass('hidden');
 	} else{
 		$('.call__button-wrapper').removeClass('hidden');

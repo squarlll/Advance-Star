@@ -683,6 +683,10 @@ html.lock {
   background: #fff;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 6px 0px;
 }
+.call__button-wrapper.hidden{
+  opacity: 0;
+  visibility: hidden;
+}
 @media screen and (max-width: 768px) and (orientation: portrait){
   .call__button-wrapper{
     display: -webkit-flex;
@@ -699,6 +703,12 @@ html.lock {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
+  }
+}
+@media screen and (max-width: 768px){
+  .call__button{
+    width: 180px;
+    font-size: 12px;
   }
 }
 .container {

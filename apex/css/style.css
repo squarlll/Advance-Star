@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 * {
   padding: 0;
   margin: 0;
@@ -7,13 +5,7 @@
 }
 
 *::selection {
-  background: rgba(106, 17, 203, 0.8);
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
+  background: rgba(1, 94, 234, 0.6);
 }
 
 :focus,
@@ -24,13 +16,6 @@
 *:focus,
 *:active {
   outline: none;
-}
-
-nav,
-footer,
-header,
-aside {
-  display: block;
 }
 
 html,
@@ -44,28 +29,8 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-input,
-button,
-textarea {
-  font-family: inherit;
-  background: none;
-}
-
-input::-ms-clear {
-  display: none;
-}
-
-button {
-  cursor: pointer;
-}
-
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-
 a {
-  color: #000;
+  color: #fff;
 }
 
 a,
@@ -81,10 +46,6 @@ ul li {
   list-style: none;
 }
 
-img {
-  vertical-align: top;
-}
-
 h1,
 h2,
 h3,
@@ -92,798 +53,123 @@ h4,
 h5,
 h6 {
   font-size: inherit;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 ul {
   margin: 0;
 }
 
-input[type=text]::-ms-clear {
-  display: none;
-  width: 0;
-  height: 0;
-}
-
-input[type=text]::-ms-reveal {
-  display: none;
-  width: 0;
-  height: 0;
-}
-
-input::-webkit-search-decoration,
-input::-webkit-search-cancel-button,
-input::-webkit-search-results-button,
-input::-webkit-search-results-decoration {
-  display: none;
+@font-face {
+  font-family: 'SF';
+  src: url("../fonts/SFUIText-Semibold.ttf");
+  font-weight: 600;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'TTNorms';
-  src: url("../fonts/Regular/TTNorms-Regular.eot");
-  src: url("../fonts/Regular/TTNorms-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Regular/TTNorms-Regular.svg#TTNorms-Medium") format("svg"), url("../fonts/Regular/TTNorms-Regular.ttf") format("truetype"), url("../fonts/Regular/TTNorms-Regular.woff") format("woff"), url("../fonts/Regular/TTNorms-Regular.woff2") format("woff2");
+  font-family: 'SF';
+  src: url("../fonts/SFUIText-Regular.ttf");
   font-weight: 400;
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'TTNorms';
-  src: url("../fonts/Medium/TTNorms-Medium.eot");
-  src: url("../fonts/Medium/TTNorms-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Medium/TTNorms-Medium.svg#TTNorms-Medium") format("svg"), url("../fonts/Medium/TTNorms-Medium.ttf") format("truetype"), url("../fonts/Medium/TTNorms-Medium.woff") format("woff"), url("../fonts/Medium/TTNorms-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'TTNorms';
-  src: url("../fonts/Bold/TTNorms-Bold.eot");
-  src: url("../fonts/Bold/TTNorms-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Bold/TTNorms-Bold.svg#TTNorms-Medium") format("svg"), url("../fonts/Bold/TTNorms-Bold.ttf") format("truetype"), url("../fonts/Bold/TTNorms-Bold.woff") format("woff"), url("../fonts/Bold/TTNorms-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
+html {
+  overflow-x: hidden;
 }
 
 body {
-  background: url("../img/bg.png") no-repeat center/cover;
+  background: #1D202A;
+  overflow: hidden;
   min-height: 100vh;
-  padding-bottom: 60px;
-  font-family: "TTNorms", sans-serif;
-  letter-spacing: 0.1px;
-}
-
-.social {
-  position: fixed;
-  left: 98px;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 11;
-}
-
-.social__item {
-  max-width: 31px;
-  max-height: 31px;
-  background: #fff;
-  border-radius: 50%;
-  display: block;
-  padding: 7px;
-}
-
-.social__item img {
-  max-height: 100%;
-  max-width: 100%;
-  width: 100%;
-}
-
-.social__item:nth-child(n+2) {
-  margin-top: 34px;
-}
-
-.tabs {
-  display: none;
-}
-
-.tabs.active {
-  display: block;
-}
-
-.csgo {
-  max-width: 1250px;
-  margin: 0 auto;
-  padding: 60px 10px 0 10px;
-}
-
-.csgo__logo {
-  margin-bottom: 41px;
-  text-shadow: 4px 6px 17px #000000;
-  color: #ffffff;
-  font-size: 60px;
-  font-weight: 700;
-  line-height: 46px;
-  text-align: right;
-  text-transform: uppercase;
-  letter-spacing: -7.8px;
-}
-
-.csgo__menu {
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.csgo__menu .menu__buttons {
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  background: #191c27;
-  border-radius: 18px 18px 0 0;
-}
-
-.csgo__menu .menu__buttons .menu__button:nth-child(1) {
-  margin-right: -12px;
-}
-
-.csgo__menu .menu__buttons .menu__button:nth-child(2) {
-  margin-right: -12px;
-}
-
-.csgo__menu .menu__button {
-  border-radius: 0 18px;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 12.68px;
-  letter-spacing: 1.81px;
-  padding: 8px 27px 7px 29px;
-  display: block;
-}
-
-.csgo__menu .menu__button_3 {
-  border-radius: 18px 0 18px 0;
-}
-
-.csgo__menu .menu__button.active {
-  box-shadow: -3px 0 3px 1px rgba(85, 70, 70, 0.46);
-  background: linear-gradient(to left, #2575fc 0%, #6a11cb 100%);
-}
-
-.csgo .first-block {
-  max-width: 100%;
-  height: 81px;
-  border-radius: 18px 0 18px 0;
-  padding: 12px 16px 8px 16px;
-  background: url("../img/title-bg.png") no-repeat center/cover;
-}
-
-.csgo .first-block__title {
-  color: #fefefe;
-  font-size: 36px;
-  font-weight: 700;
-  letter-spacing: 0.36px;
-}
-
-.csgo .first-block__text {
-  margin-top: 6px;
-  margin-left: 2px;
-  color: #fefefe;
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: 0.18px;
-}
-
-.csgo .first-block__text span {
-  font-weight: 700;
-}
-
-.csgo__items {
-  /* полоса прокрутки (скроллбар) */
-  /* ползунок скроллбара */
-}
-
-.csgo__items::-webkit-scrollbar {
-  width: 14px;
-  border-radius: 7px;
-  background-color: #1f222d;
-}
-
-.csgo__items::-webkit-scrollbar-thumb {
-  border: 4px solid #1f222d;
-  border-radius: 100px;
-  background: linear-gradient(to top, #2575fc 0%, #6a11cb 100%);
-}
-
-.csgo__content {
+  max-height: 100vh;
+  font-family: "SF", sans-serif;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 17px;
-}
-
-.csgo__content .csgo__block-1:nth-child(even) {
-  margin-left: 15px;
-}
-
-.csgo__content .csgo__block-1:nth-child(n+3) {
-  margin-top: 17px;
-  padding-bottom: 25px;
-}
-
-.csgo__content .csgo__match .csgo__items {
-  max-height: 234px;
-  overflow-y: auto;
-  padding-right: 10px;
-}
-
-.csgo__content .csgo__statistics .csgo__items {
-  max-height: 384px;
-  overflow-y: auto;
-  padding-right: 10px;
-  position: relative;
-}
-
-.csgo__content .csgo__statistics_1 {
-  padding-bottom: 15px;
-}
-
-.csgo__block-1 {
-  width: calc(50% - 7.5px);
-  max-width: calc(50% - 7.5px);
-  min-height: 250px;
-  padding: 32px 8px 15px 8px;
-  background-color: #191c27;
-}
-
-.csgo__row {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 26px;
-  padding: 0 8px;
-}
-
-.csgo__title {
-  color: #fff;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 23px;
-  letter-spacing: -0.3px;
-}
-
-.csgo__results {
-  color: #fff;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 23px;
-  letter-spacing: -0.3px;
-}
-
-.csgo .item:not(:last-child) {
-  margin-bottom: 16px;
-}
-
-.csgo .item__content {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  height: 34px;
-  max-width: 100%;
-  padding: 3px 4px 3px 8px;
-  border-radius: 10px;
-  background: #1f222d;
-  cursor: pointer;
-  overflow: hidden;
   position: relative;
-  transition: .25s;
 }
 
-.csgo .item__content:before {
-  content: '';
+.background {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  z-index: -1;
+  transform: scale(1.15);
+  width: 100vw;
   height: 100%;
-  display: block;
-  background: linear-gradient(to left, #2575fc 0%, #6a11cb 100%);
-  opacity: 0;
-  transition: .35s;
+  max-height: 100%;
+  background: url("../img/bg.png") no-repeat center/cover;
 }
 
-.csgo .item__content:hover {
-  box-shadow: -3px 0 3px 1px rgba(85, 70, 70, 0.46);
+.page__wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  overflow-y: auto;
+  max-height: 100vh;
 }
 
-.csgo .item__content:hover:before {
-  opacity: 1;
-}
-
-.csgo .item__content.active {
-  box-shadow: -3px 0 3px 1px rgba(85, 70, 70, 0.46);
-}
-
-.csgo .item__content.active:before {
-  opacity: 1;
-}
-
-.csgo .item__team {
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 25px;
-  letter-spacing: -0.16px;
-  z-index: 2;
-}
-
-.csgo .item__statistics-block {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 2;
-}
-
-.csgo .item__statistics {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.page__title {
+  font-size: 75px;
+  line-height: 1.2;
   text-align: center;
-  color: #ffffff;
-  font-size: 12px;
-  line-height: 16px;
-  text-transform: uppercase;
-  letter-spacing: -0.12px;
-  z-index: 2;
+  color: rgba(227, 242, 255, 0.9);
+  margin-bottom: 75px;
 }
 
-.csgo .item__statistics-number {
+.page__list {
+  text-align: center;
+}
+
+.page__list-item {
+  margin: 27px 0;
+}
+
+.page__list-item:nth-child(1) {
+  margin-top: 0;
+}
+
+.page__list-item:last-child {
+  margin-bottom: 0;
+}
+
+.page__link {
   font-weight: 500;
-  z-index: 2;
+  font-size: 35px;
+  line-height: 1.2;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  text-transform: capitalize;
+  color: rgba(227, 242, 255, 0.9);
 }
 
-.csgo .item__statistics-name {
-  font-weight: 400;
-  z-index: 2;
-}
-
-.csgo .item__info {
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  background: #21232d;
-  border-radius: 0 0 100px 10px;
-  padding: 29px 60px 5px 5px;
-  width: 520px;
-  max-width: calc(100% - 30px);
-  margin: -24px 0 0 13px;
-}
-
-.csgo .item__info-col {
-  color: #ffffff;
-  font-size: 12px;
-}
-
-.csgo .item__info-col div:nth-child(n+2) {
-  margin-top: 7px;
-}
-
-.csgo .item__info-col:nth-child(1) {
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  align-items: center;
-}
-
-.csgo .item__info-col:nth-child(2) {
-  margin-left: 41px;
-  min-width: 61px;
-}
-
-.csgo .item__info-col:nth-child(3) {
-  margin-left: 90px;
-  min-width: 70px;
-}
-
-.csgo .item__info-col:nth-child(4) {
-  margin-left: 90px;
-  min-width: 75px;
-}
-
-.players__title {
-  margin-bottom: 10px;
-}
-
-.players__row {
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 14px;
-}
-
-.players__item {
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  padding: 20px 5px;
-  flex: 0 1 calc(50% - 10px);
-  border-radius: 10px;
-  background-color: #21232d;
-  position: relative;
-  overflow: hidden;
-}
-
-.players__item:before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  box-shadow: -3px 0 3px 1px rgba(85, 70, 70, 0.46);
-  background: linear-gradient(to left, #2575fc 0%, #6a11cb 100%);
-  opacity: 0;
-  transition: .3s;
-}
-
-.players__item:hover:before {
-  opacity: 1;
-}
-
-.players__criteria {
-  color: #fefefe;
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: 0.18px;
-  margin-left: 1px;
-}
-
-.players__items {
-  padding: 0px 7px;
-}
-
-.players__help {
-  margin-top: 12px;
-}
-
-.players__damage {
-  margin-top: 12px;
-}
-
-.player__team-logo {
-  flex: 0 0 58px;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  align-items: center;
-  margin-right: 20px;
-  z-index: 2;
-}
-
-.player__team-logo img {
-  width: 100%;
-}
-
-.player__wrapper {
-  z-index: 2;
-}
-
-.player__name {
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.player__name span {
-  color: #fff;
-  font-size: 14px;
-  line-height: 16px;
-  display: block;
-}
-
-.player__name span:nth-child(1) {
-  width: 70px;
-}
-
-.player__name span:nth-child(2) {
-  font-weight: 700;
-}
-
-.player__team {
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 5.5px;
-}
-
-.player__team span {
-  color: #fff;
-  font-size: 14px;
-  line-height: 16px;
-  display: block;
-}
-
-.player__team span:nth-child(1) {
-  width: 70px;
-}
-
-.player__team span:nth-child(2) {
-  font-weight: 700;
-}
-
-.player__kills {
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 5.5px;
-}
-
-.player__kills span {
-  color: #fff;
-  font-size: 14px;
-  line-height: 16px;
-  display: block;
-}
-
-.player__kills span:nth-child(1) {
-  width: 70px;
-}
-
-.player__kills span:nth-child(2) {
-  font-weight: 700;
-}
-
-@media screen and (max-width: 1440px) {
-  .social {
-    left: 30px;
+@media screen and (max-width: 992px) {
+  .page__title {
+    font-size: 44px;
+    margin-bottom: 35px;
+  }
+  .page__link {
+    font-size: 22px;
   }
 }
 
-@media screen and (max-width: 1330px) {
-  .social {
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    justify-content: flex-end;
-    left: auto;
-    top: auto;
-    position: relative;
-    transform: none;
+@media screen and (max-height: 580px) {
+  .page__title {
+    font-size: 44px;
+    margin-bottom: 35px;
   }
-
-  .social__item:nth-child(n+2) {
-    margin-top: 0;
-    margin-left: 10px;
-  }
-
-  .csgo__menu {
-    justify-content: space-between;
-  }
-
-  .csgo .item__info-col:nth-child(2) {
-    margin-left: 0;
-  }
-
-  .csgo .item__info-col:nth-child(3) {
-    margin-left: 0;
-  }
-
-  .csgo .item__info-col:nth-child(4) {
-    margin-left: 0;
-  }
-
-  .csgo .item__info {
-    justify-content: space-between;
+  .page__link {
+    font-size: 22px;
   }
 }
 
-@media screen and (max-width: 1250px) {
-  .players__row {
-    flex-direction: column;
+@media screen and (max-width: 520px) {
+  .page__title {
+    font-size: 28px;
+    margin-bottom: 35px;
   }
-
-  .players__row .players__item:nth-child(2) {
-    margin-top: 10px;
-  }
-
-  .players__item {
-    flex: 0 1 100%;
-  }
-}
-
-@media screen and (max-width: 1170px) {
-  .players__item {
-    flex: 0 1 calc(50% - 7.5px);
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .csgo .first-block__title {
-    font-size: 24px;
-  }
-
-  .csgo .first-block__text {
+  .page__link {
     font-size: 16px;
-    margin-top: 10px;
-  }
-
-  .csgo .first-block {
-    height: 72px;
-  }
-
-  .csgo__title {
-    font-size: 20px;
-    line-height: 1;
-  }
-
-  .csgo__results {
-    font-size: 20px;
-    line-height: 1;
-  }
-
-  .players__criteria {
-    font-size: 16px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .csgo {
-    max-width: 768px;
-  }
-
-  .csgo__content .csgo__block-1:nth-child(even) {
-    margin-left: 0;
-  }
-
-  .csgo__content {
-    flex-direction: column;
-  }
-
-  .csgo__content .csgo__block-1:nth-child(n+2) {
-    margin-top: 10px;
-  }
-
-  .csgo__block-1 {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .csgo .item__content {
-    max-width: 100%;
-  }
-
-  .csgo .item__info {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .csgo .item__team {
-    font-size: 14px;
-    line-height: 18px;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .social {
-    justify-content: center;
-    margin-bottom: 15px;
-  }
-
-  .csgo__logo {
-    margin-bottom: 20px;
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .csgo .item__team {
-    font-size: 12px;
-    line-height: 14px;
-  }
-
-  .csgo .item__info {
-    border-radius: 0 0 50px 10px;
-    padding-right: 20px;
-  }
-
-  .csgo .item__info-col {
-    font-size: 10px;
-  }
-
-  .csgo .item__info-col:nth-child(1) {
-    max-width: 30px;
-  }
-
-  .csgo .item__info-col:nth-child(1) img {
-    max-width: 100%;
-  }
-
-  .csgo .item__info-col:nth-child(2) {
-    margin-left: 0;
-  }
-
-  .csgo .item__info-col:nth-child(3) {
-    min-width: 58px;
-  }
-
-  .csgo .item__info-col:nth-child(4) {
-    min-width: 63px;
-  }
-}
-
-@media screen and (max-width: 490px) {
-  .csgo__menu {
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .csgo__menu .menu__button {
-    padding: 8px 22px 7px 24px;
-  }
-
-  .csgo .first-block__title {
-    font-size: 20px;
-  }
-
-  .csgo .first-block__text {
-    font-size: 14px;
-  }
-
-  .csgo__items::-webkit-scrollbar {
-    width: 6px;
-  }
-
-  .csgo__items::-webkit-scrollbar-thumb {
-    border: 1px solid #1f222d;
-  }
-
-  .csgo__content .csgo__match .csgo__items {
-    padding-right: 5px;
-    min-height: 274px;
-  }
-
-  .csgo__title {
-    font-size: 18px;
-  }
-
-  .csgo__results {
-    font-size: 18px;
-  }
-
-  .csgo .item__content {
-    min-height: 34px;
-    height: 42px;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  .csgo .item__info {
-    max-width: calc(100% - 5px);
-    margin-left: 0;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  .csgo__menu {
-    justify-content: center;
   }
 }

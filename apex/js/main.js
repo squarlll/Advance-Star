@@ -1,10 +1,25 @@
-$(document).ready(function(){
-	$('img, a').on('dragstart', function(event) { event.preventDefault(); });
-	$('.item__info').slideUp(0);
-	$('.item__content').on('click', function(){
-		$(this).siblings('.item__info').slideToggle(300);
-		$(this).parent().siblings().children('.item__info').slideUp(300);
-		$(this).toggleClass('active');
-		$(this).parent().siblings().children('.item__content').removeClass('active');
-	});
+// mouse parallax
+
+$(document).ready(function() {
+  $("body").mousemove(function(e) {
+    
+    let screenWidth = $(window).width();
+    let screenHeight = $(window).height();
+    
+    $(".parallax").css({
+      transform:
+        "scale(1.15) translate(-" + e.pageX/screenWidth * 50 + "px, -" + e.pageY/screenHeight * 50 + "px)"
+    });
+  });
 });
+
+
+
+// scroll parallax
+
+// function parallax() {
+//   var parallax = document.getElementById("parallax");
+//   parallax.style.top = -(window.pageYOffset / 4)+'px';
+// }
+
+// window.addEventListener("scroll", parallax, false);

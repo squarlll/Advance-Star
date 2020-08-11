@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Name</title>
+</head>
+<body>
+	<div class="preloader__wrapper">
+		<div class="preloader">
+			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; display: block;shape-rendering: auto;" width="23px" height="23px" viewBox="0 0 10" preserveAspectRatio="xMidYMid">
+				<circle cx="12" cy="12" fill="none" stroke="#00c0fa" stroke-width="2" r="10" stroke-dasharray="34.93 56.97787143782138">
+					<animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="0.6s" values="0 12 12;360 12 12" keyTimes="0;1"></animateTransform>
+				</circle>
+			</svg>
+		</div>
+	</div>
+	<div class="apex-3">
+		<div class="apex__top-row wow fadeInUp">
+			<div class="apex__social-media">
+				<a class="social__item" href="https://discord.gg/earussia"><img src="img/vk.png" alt=""></a>
+				<a class="social__item" href="https://vk.com/earussia"><img src="img/discord.png" alt=""></a>
+				<a class="social__item" href="https://vk.com/earussia"><img src="img/twitch.png" alt=""></a>
+			</div>
+			<div class="apex__logo">logo</div>
+		</div>
+		<div class="apex__menu wow fadeInUp">
+			<a href="" class="apex__discord-btn">Войти через Discord</a>
+			<div class="menu__buttons">
+				<button class="menu__button menu__button_3">Меню3</button>
+				<button class="menu__button menu__button_2">Меню2</button>
+				<button class="menu__button menu__button_1 active">Меню</button>
+			</div>
+		</div>
+		<div class="first-block wow fadeInUp">
+			<h1 class="first-block__title">Добро пожаловать!</h1>
+			<div class="first-block__text">
+				Lorem ipsum <span>dolor</span> sit amet, consectetur
+			</div>
+		</div>
+		<div class="news">
+			<div class="news__slider-wrapper wow fadeInUp">
+				<div class="swiper-container news__slider">
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide slider__item">
+							<div class="news__title">Новость намба 1</div>
+							<div class="news__subtitle">Lorem ipsum <span>dolor</span> sit amet, consectetur.</div>
+						</div>
+				        <div class="swiper-slide slider__item">
+				        	<div class="news__title">Новость намба 2</div>
+				        	<div class="news__subtitle">Lorem ipsum <span>dolor</span> sit amet, consectetur.</div>
+				        </div>
+				        <div class="swiper-slide slider__item">
+				        	<div class="news__title">Новость намба 3</div>
+				        	<div class="news__subtitle">Lorem ipsum <span>dolor</span> sit amet, consectetur.</div>
+				        </div>
+				    </div>
+				    <!-- If we need pagination -->
+				    <div class="news__pagination-wrapper">
+				    	<div class="news__pagination"></div>
+				    </div>
+				</div>
+			</div>
+			<div class="news__row wow fadeInUp">
+				<a class="news__item" href="apex_2">
+					<div class="news__title">Новость намба 1</div>
+					<div class="news__subtitle">Lorem ipsum <span>dolor</span> sit amet, consectetur.</div>
+					<div class="news__registration registration_closed">Регистрация закрыта</div>
+					<div class="news__schedule">
+						<div class="schedule__name">APEX Tour #1</div>
+						<div class="schedule__time">12:15 MSK</div>
+					</div>
+				</a>
+				<a class="news__item" href="apex_2">
+					<div class="news__title">Новость намба 1</div>
+					<div class="news__subtitle">Lorem ipsum <span>dolor</span> sit amet, consectetur.</div>
+					<div class="news__registration registration_open">Регистрация открыта</div>
+					<div class="news__schedule">
+						<div class="schedule__name">APEX Tour #1</div>
+						<div class="schedule__time">12:15 MSK</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="apex__copyright-wrapper wow fadeInUp">
+			<p class="apex__copyright">2020 © All rights reserved. Apex Legends is a registered trademark of EA.<br> Сontact us on <a href="mailto:info@apexesports.ru">info@apexesports.ru</a><br>	Tournaments is not affiliated with or sponsored by Electronic Arts Inc.</p>
+		</div>
+	</div>
+	<!-- scripts -->
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		$(document).ready(function(){
+			new WOW().init();
+		});
+	</script>
+</body>
+</html>

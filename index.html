@@ -3,10 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="description" content="Профессиональная оклейка автомобилей защитными полиуретановыми пленками премиум класса">
+	<title>Advance Star</title>
+	<!-- Стили -->
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/lightgallery.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
-	<title>Advance Star</title>
+	<!-- Фавикон -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+	<script src="//code-ya.jivosite.com/widget/gPRBub1XSo" async></script>
 </head>
 <body>
 	<!-- scroll top button -->
@@ -23,7 +34,7 @@
 		<div class="popup popup_1">
 			<div class="popup__container">
 				<button class="popup__close-button"><img src="img/popup-close.svg" alt=""></button>
-				<div class="popup__thank">Спасибо!<br>Мы приняли вашу заявку</div>
+				<div class="popup__thank">Спасибо, <span></span>!<br>Мы приняли вашу заявку</div>
 				<div class="popup__image"><img src="img/popup-done.svg" alt=""></div>
 				<div class="popup__text_1">«Наш консультант свяжется с вами в течение 15 мин в рабочее время и ответит на все вопросы»</div>
 			</div>
@@ -31,11 +42,16 @@
 		<div class="popup__form-wrapper">
 			<button class="popup__close-button"><img src="img/popup-close.svg" alt=""></button>
 			<div class="popup__text">Оставьте заявку сегодня и получите <span>скидку 10%</span>  на все виды услуг детейлинг-центра!</div>
-			<form action="" class="popup__form" onsubmit="return false;">
-				<input class="popup__field" type="text" placeholder="Модель авто *" required>
-				<input class="popup__field" type="text" placeholder="Имя *" required>
-				<input class="popup__field" type="tel" placeholder="Телефон *" required>
-				<input class="popup__button" type="submit" value="Оставить заявку">
+			<form action="" class="popup__form" onSubmit="ym(65706790,'reachGoal','modal-form')">
+				<input class="popup__field" type="text" name="Модель авто" placeholder="Модель авто *" required>
+				<input class="popup__field form__name" type="text" name="Имя" placeholder="Имя *" required>
+				<input class="popup__field" type="tel" name="Телефон" placeholder="Телефон *" required>
+				<button class="popup__button" type="submit">Оставить заявку</button>
+				<!-- Hidden Required Fields -->
+				<input type="hidden" name="project_name" value="Advance Star">
+				<input type="hidden" name="admin_email" value="info@advancestar.ru">
+				<input type="hidden" name="form_subject" value="Форма модального окна">
+				<!-- / Hidden Required Fields -->
 			</form>
 		</div>
 	</div>
@@ -52,7 +68,7 @@
 				<li class="social-media__item"><a href="https://t.me/AdvanceStar1" class="social-media__item_5"></a></li>
 			</ul>
 			<div class="header__callback">
-				<button>Перезвоните мне</button>
+				<button onClick="ym(65706790,'reachGoal','menu-button')">Перезвоните мне</button>
 			</div>
 			<div class="header__phone-numbers">
 				<a href="tel:+74959913969">+7 495 991-39-69</a>
@@ -67,11 +83,16 @@
 		<div class="main__subtitle">Защитим ваш автомобиль от сколов и царапин <span>РАЗ И НАВСЕГДА</span></div>
 		<div class="main__form wow fadeInUp">
 			<div class="form__title">Запишитесь на консультацию сегодня и получите <span>10% скидку</span> на все виды услуг детейлинг-центра!</div>
-			<form action="" onsubmit="return false;">
-				<input class="form__item" type="text" placeholder="Модель авто *" required>
-				<input class="form__item" type="tel" placeholder="Телефон *" required>
-				<input class="form__item" type="text" placeholder="Имя *" required>
+			<form action="" method="post" onSubmit="ga('send', 'event', 'zakaz_zvonka', 'submit'); ym(65706790,'reachGoal','main-form');">
+				<input class="form__item" type="text" name="Модель авто" placeholder="Модель авто *" required>
+				<input class="form__item" type="tel" name="Телефон" placeholder="Телефон *" required>
+				<input class="form__item form__name" type="text" name="Имя" placeholder="Имя *" required>
 				<button class="form__item form__submit button" type="submit">Получить консультацию</button>
+				<!-- Hidden Required Fields -->
+				<input type="hidden" name="project_name" value="Advance Star">
+				<input type="hidden" name="admin_email" value="info@advancestar.ru">
+				<input type="hidden" name="form_subject" value="Форма главного экрана">
+				<!-- / Hidden Required Fields -->
 			</form>
 		</div>
 		<ul class="main__social">
@@ -296,12 +317,12 @@
 					<div class="stage__tile">
 						<img src="img/stages/stages_4.png" alt="" class="stage__border">
 						<div class="stage__img"><img src="img/stages/stages_4.jpg" alt=""></div>
-						<div class="stage__text">Вы получите: <br>— рекомендации  специалиста по уходу за пленкой;<br>— внесение VIN-номерав базу компании</div>
+						<div class="stage__text">Вы получите: <br>— рекомендации  специалиста по уходу за пленкой;<br>— внесение VIN-номера в базу компании</div>
 					</div>
 				</div>
 			</div>
 			<div class="stages__button-wrapper">
-				<button class="stages__button button">Получить консультацию</button>
+				<button class="stages__button button" onClick="ym(65706790,'reachGoal','stages-button')">Получить консультацию</button>
 			</div>
 		</div>
 	</div>
@@ -345,7 +366,7 @@
 			</div>
 			<div class="detailing__text wow fadeInRight">Мы не упустим ни одной мелочи –– проследим, чтобы под пленкой не было грязи, воздуха, растяжек и песчинок; аккуратно сделаем подвороты пленки под детали, чтобы минимизировать риск повреждения третьими лицами.</div>
 		</div>
-		<button class="detailing__button button">Записаться</button>
+		<button class="detailing__button button" onClick="ym(65706790,'reachGoal','detailing-button')">Записаться</button>
 	</div>
 	<!-- / detailing -->
 	<!-- about -->
@@ -474,7 +495,7 @@
 			<div class="process__item">
 				<img src="img/process/process_1.svg" alt="">
 				Оставьте заявку и наш менеджер перезвонит вам в течении 15 минут, чтобы уточнить дату и время
-				<button class="process__button button">Записаться</button>
+				<button class="process__button button" onClick="ym(65706790,'reachGoal','process-button')">Записаться</button>
 			</div>
 			<div class="process__item">
 				<img src="img/process/process_2.svg" alt="">
@@ -621,11 +642,16 @@
 		<iframe loading="lazy" class="wow fadeInLeft" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d794.4081125725749!2d37.673845086715666!3d55.72504766606731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54ad689096af3%3A0xd56798381e9b70e4!2z0YPQuy4g0JzQtdC70YzQvdC40LrQvtCy0LAsIDUsINCc0L7RgdC60LLQsCwgMTE1MDg4!5e0!3m2!1sru!2sru!4v1593704153022!5m2!1sru!2sru" width="767" height="580" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 		<div class="map__form-wrapper wow fadeInRight">
 			<div class="map__text">Оставьте заявку сегодня и получите <span>скидку 10%</span>  на все виды услуг детейлинг-центра!</div>
-			<form action="" class="map__form" onsubmit="return false;">
-				<input class="map__field" type="text" placeholder="Модель авто *" required>
-				<input class="map__field" type="text" placeholder="Имя *" required>
-				<input class="map__field" type="tel" placeholder="Телефон *" required>
+			<form action="" class="map__form" onSubmit="ym(65706790,'reachGoal','map-form')">
+				<input class="map__field" type="text" name="Модель авто" placeholder="Модель авто *" required>
+				<input class="map__field form__name" type="text" name="Имя" placeholder="Имя *" required>
+				<input class="map__field" type="tel" name="Телефон" placeholder="Телефон *" required>
 				<button class="map__button button" type="submit">Оставить заявку</button>
+				<!-- Hidden Required Fields -->
+				<input type="hidden" name="project_name" value="Advance Star">
+				<input type="hidden" name="admin_email" value="info@advancestar.ru">
+				<input type="hidden" name="form_subject" value="Форма блока с картой">
+				<!-- / Hidden Required Fields -->
 			</form>
 		</div>
 	</div>
@@ -660,5 +686,15 @@
 	<script src="js/lightgallery.min.js"></script>
 	<script src="js/main.js"></script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuiqDB_QpVCh__yehZ_Vyw6c8r6yl9nVw&callback=initMap" type="text/javascript"></script>
+	<!-- /Yandex.Metrika counter -->
+	<script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(65706790, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/65706790" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-173062971-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-173062971-1');
+	</script>
 </body>
 </html>

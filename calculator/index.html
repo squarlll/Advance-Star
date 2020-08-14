@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Форма</title>
+</head>
+<body>
+	<div class="form-wrapper">
+		<div class="form">
+			<form class="form_1 active" onsubmit="return false;">
+				<div class="form-name">Заказать забор</div>
+				<label class="field-wrapper form__field_1">
+					<div class="field-name">Длина забора</div>
+					<input class="form_1__field field" name="length" type="number" value="0" required min="1" step="0.5"><div class="field__measure field_1__measure">метров</div>
+					<span class="field__warning">Неверно заполнено поле</span>
+				</label>
+				<label class="field-wrapper form__field_2">
+					<div class="field-name">Высота забора</div>
+					<input class="form_1__field field" name="height" type="number" value="0" required min="1" step="0.5"><div class="field__measure field_2__measure">метров</div>
+					<span class="field__warning">Неверно заполнено поле</span>
+				</label>
+				<div class="select-wrapper">
+					<div class="field-name">Материал забора</div>
+					<div class="__select" data-state="">
+						<div class="__select__title" data-default="Option 0">Выберите материал</div>
+						<div class="__select__content" required>
+							<input id="singleSelect0" class="__select__input" type="radio" value="0" name="singleSelect" checked/>
+							<label for="singleSelect0" class="__select__label">Выберите материал</label>
+							<input id="singleSelect1" class="__select__input" type="radio" value="400" name="singleSelect" data-material="профнастил"/>
+							<label for="singleSelect1" class="__select__label">Профнастил 400 Р за м²</label>
+							<input id="singleSelect2" class="__select__input" type="radio" value="500" name="singleSelect" data-material="модули"/>
+							<label for="singleSelect2" class="__select__label">Модули 500 Р за м²</label>
+							<input id="singleSelect3" class="__select__input" type="radio" value="700" name="singleSelect" data-material="бетон"/>
+							<label for="singleSelect3" class="__select__label">Бетон 700 Р за м²</label>
+							<input id="singleSelect4" class="__select__input" type="radio" value="200" name="singleSelect" data-material="сетка"/>
+							<label for="singleSelect4" class="__select__label">Сетка 200 Р за м²</label>
+						</div>
+					</div>
+				</div>
+				<label class="field-wrapper">
+					<input class="checkbox" name="mounting" type="checkbox">
+					<span class="fake"></span>Нужен монтаж
+				</label>
+				<div class="amount-wrapper">
+					<div class="amount">
+						Сумма заказа: <span>0</span>
+						<img class="amount__ruble" src="./img/ruble.svg" alt="">
+					</div>
+				</div>
+				<div class="button-next-wrapper">
+					<button class="button-next disabled">Далее</button>
+				</div>
+			</form>
+			<form class="form_2" onsubmit="return false;">
+				<div class="form_2__back"><img src="../img/arrow.svg" alt="">Вернуться</div>
+				<div class="form-name">Пожалуйста, представьтесь</div>
+				<label class="field-wrapper form_1__field_1">
+					<div class="field-name">Ваше имя</div>
+					<input class="form_2__field field" name="length" type="text" required>
+					<span class="field__warning">Неверно заполнено поле</span>
+				</label>
+				<label class="field-wrapper form_1__field_2">
+					<div class="field-name">Электронная почта</div>
+					<input class="form_2__field field" name="height" type="email" required>
+					<span class="field__warning">Неверно заполнено поле</span>
+				</label>
+				<label class="field-wrapper form_1__field_3">
+					<div class="field-name">Телефон</div>
+					<input class="form_2__field field" id="phone" name="height" type="tel" value="+7 (___) ___ - __ - __" placeholder="+7 (___) ___ - __ - __" required>
+					<span class="field__warning">Неверно заполнено поле</span>
+				</label>
+				<div class="form_2__message">Вы укомплектовали забор <div class="message__length">длинной <span>6 метров</span></div> и <div class="message__height">высотой <span>2 метра</span></div> из материала <span class="message__material"></span> на сумму <span class="message__amount"><span class="message__amount-val">8 270</span> <img class="amount__ruble" src="./img/ruble.svg" alt=""></span></div>
+				<div class="button-send-wrapper">
+					<button class="button-send disabled">Отправить</button>
+				</div>
+			</form>
+			<div class="submit">
+				<div class="submit__back">Закрыть</div>
+				<div class="submit__title"><span class="submit__name">Татьяна,</span> заказ <span class="submit__number">№ 8675</span> сформирован!</div>
+				<div class="submit__email">Мы повторили его комплектацию на почту <span>mail@mail.ru</span></div>
+				<div class="submit__tel">В ближайшее время наш специалист свяжется с вами по телефону <span>+7 (917) 111-22-33</span></div>
+			</div>
+		</div>
+	</div>
+	<!-- scripts -->
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

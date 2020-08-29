@@ -47,6 +47,7 @@ $(document).ready(function(){
 			$('.find-out__items_2').siblings().removeClass('_active');
 			$('.find-out__items_2').addClass('_active');
 			$('.find-out__step span').text('2');
+			$('.find-out__text').text('что будем делать с грузом?');
 			$('.find-out__submit').addClass('find-out__submit_2');
 			// Шаг 2
 			$('.find-out__submit_2').on('click', function(){
@@ -55,27 +56,34 @@ $(document).ready(function(){
 					$('.find-out__items_3').siblings().removeClass('_active');
 					$('.find-out__items_3').addClass('_active');
 					$('.find-out__step span').text('3');
+					$('.find-out__text').text('куда везём груз?');
 					$('.find-out__submit_2').addClass('find-out__submit_3').removeClass('find-out__submit_2');
 				}
 				if ($('.checkbox[name="other"]').prop('checked') && $('.field-other').val() == '') {
 					$('.find-out__step span').text('2');
+					$('.find-out__text').text('что будем делать с грузом?');
+					$('.find-out__items_3 input[type="text"]').prop('required', false);
 					$('.find-out__items_2').siblings().removeClass('_active');
 					$('.find-out__items_2').addClass('_active');
 					$('.find-out__submit').addClass('find-out__submit_2').removeClass('find-out__submit_3');
 				}
 				// Шаг 3
 				$('.find-out__submit_3').on('click', function(){
+					$('.find-out__items_3 input[type="text"]').prop('required', 'required');
 					if ($('input[name="whence"]').val() !== '' && $('input[name="where"]').val() !== '' && $('input[name="equipment"]').val() !== '') {
 						$('.find-out__items_4').siblings().removeClass('_active');
 						$('.find-out__items_4').addClass('_active');
 						$('.find-out__step span').text('4');
+						$('.find-out__text').text('куда вам отправить смету?');
 						$('.find-out__submit_3').addClass('find-out__submit_4').removeClass('find-out__submit_3');
 					}
 
 					// Шаг 4
 					$('.find-out__submit_4').on('click', function(){
+						$('.find-out__items_4 input[type="text"], .find-out__items_4 input[type="tel"], .find-out__items_4 input[type="email"]').prop('required', 'required');
 						if ($('.find-out__items_4 input[name="Телефон"]').val() !== '' && $('.find-out__items_4 input[name="Email"]').val() !== '') {
 							$('.find-out__items_4').removeClass('_active');
+							$('.find-out').addClass('thanks')
 						}
 					});
 				});

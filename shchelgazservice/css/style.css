@@ -284,10 +284,17 @@ body {
   color: #fff;
   font-size: 18px;
   font-weight: 600;
+  -webkit-transition: 0.15s linear;
+  -o-transition: 0.15s linear;
+  transition: 0.15s linear;
 }
 
 .header__phone:nth-child(n+2) {
   margin-top: 5px;
+}
+
+.header__phone:hover {
+  color: #93b3f5;
 }
 
 .main {
@@ -562,15 +569,19 @@ body {
 
 .services__button {
   width: 260px;
-  padding: 21px 36px;
+  padding: 19px 34px;
   text-align: center;
   -webkit-box-shadow: 0 5px 15px rgba(92, 146, 255, 0.6);
           box-shadow: 0 5px 15px rgba(92, 146, 255, 0.6);
   border-radius: 10px;
   background-color: #5c92ff;
+  border: 2px solid #5c92ff;
   color: #fefefe;
   font-size: 16px;
   font-weight: 600;
+  -webkit-transition: 0.15s linear;
+  -o-transition: 0.15s linear;
+  transition: 0.15s linear;
 }
 
 .services__button-image {
@@ -579,6 +590,11 @@ body {
 
 .services__button-image img {
   max-width: none;
+}
+
+.services__button:hover {
+  background-color: #fff;
+  color: #5c92ff;
 }
 
 .connection {
@@ -1450,7 +1466,13 @@ body {
           box-shadow: 0px 5px 15px 0px rgba(91, 145, 255, 0.6);
   border-radius: 10px;
   padding: 26px 47px;
-  text-align: center;
+  -webkit-transition: 0.15s linear;
+  -o-transition: 0.15s linear;
+  transition: 0.15s linear;
+}
+
+.guarantee__price-list .price-list__button:hover {
+  background-color: #79a3f7;
 }
 
 .guarantee__price-list_1 {

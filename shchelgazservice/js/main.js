@@ -1,7 +1,20 @@
 $(document).ready(function(){
-	$('.slider__images-item img').on('click', function(){
-		var clickedImage = $(this).attr('src');
-		$('.slider__main-image img').attr('src', clickedImage);
-		$('.slider__main-image source').attr('srcset', clickedImage);
+	$('.schedule__tab_1').on('click', function(){
+		$(this).addClass('_active');
+		$(this).siblings().removeClass('_active');
+		$('.schedule_1').addClass('_active');
+		$('.schedule_1').siblings().removeClass('_active');
+	});
+	$('.schedule__tab_2').on('click', function(){
+		$(this).addClass('_active');
+		$(this).siblings().removeClass('_active');
+		$('.schedule_2').addClass('_active');
+		$('.schedule_2').siblings().removeClass('_active');
+	});
+	$('.schedule__tab_3').on('click', function(){
+		$(this).addClass('_active');
+		$(this).siblings().removeClass('_active');
+		$('.schedule_3').addClass('_active');
+		$('.schedule_3').siblings().removeClass('_active');
 	});
 });

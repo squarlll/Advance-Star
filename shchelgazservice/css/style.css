@@ -1238,6 +1238,7 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 33.333%;
           flex: 0 0 33.333%;
+  max-width: 100%;
   border-radius: 10px;
   background-color: #fff;
   display: -webkit-box;
@@ -1563,6 +1564,16 @@ body {
   height: 43px;
   display: inline-block;
   background: url("../img/guarantee-arrow_2.png") no-repeat center/contain;
+}
+
+.guarantee__line {
+  width: 240px;
+  max-width: calc(100% - 150px);
+  height: 1px;
+  margin: -1px 0 0 110px;
+  display: inline-block;
+  opacity: 0.1;
+  background-color: #191919;
 }
 
 @media screen and (max-width: 1220px) {
@@ -2085,6 +2096,10 @@ body {
   .guarantee__price-list_1 .price-list__image {
     max-height: 133px;
     margin-right: 0;
+  }
+
+  .guarantee__line {
+    margin-left: 100px;
   }
 }
 

@@ -891,6 +891,7 @@ body {
   border-radius: 10px;
   background-color: #ffffff;
   padding: 20px 45px 40px 20px;
+  width: 1200px;
   max-width: calc(100% - 20px);
   margin: 35px auto 0;
 }

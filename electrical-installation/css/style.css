@@ -2463,6 +2463,14 @@ input[type="radio"]:checked ~ .fake:before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.fairness__pretitle {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .fairness__title {
@@ -3023,6 +3031,8 @@ input[type="radio"]:checked ~ .fake:before {
   border-radius: 10px;
   background: url("../img/price-list-image_1.jpg") no-repeat center/cover;
   padding: 39px 10px 43px;
+  position: relative;
+  z-index: 1;
 }
 
 .price-list__calculate .button:before {
@@ -3058,6 +3068,8 @@ input[type="radio"]:checked ~ .fake:before {
   margin-top: 25px;
   padding: 39px 10px 43px;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .price-list__expert .button:before {

@@ -1,9 +1,8 @@
 $(document).ready(function(){
 	$('.work__images-item img').on('click', function(){
 		var workImagesItem = $(this).attr('src');
-		// alert(workImagesItem);
-		$('.work__main-image img').prop('src', workImagesItem);
-		$('.work__main-image source').prop('srcset', workImagesItem);
+		$(this).parents('.work__images').siblings('.work__main-image').children('picture').children('img').prop('src', workImagesItem);
+		$(this).parents('.work__images').siblings('.work__main-image').children('picture').children('source').prop('srcset', workImagesItem);
 	});
 
 	$('.header__dropdown').on('mouseenter', function(){

@@ -1,0 +1,185 @@
+@font-face {
+  font-family: 'Muller';
+  src: local("Muller Regular"), local("Muller-Regular"), url("MullerRegular.woff2") format("woff2"), url("MullerRegular.woff") format("woff"), url("MullerRegular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+*:focus,
+*:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+  background: none;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a {
+  color: #000;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+image {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+ul {
+  margin: 0;
+}
+
+input[type=text]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type=text]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+  display: none;
+}
+
+body {
+  padding: 0 20px;
+  overflow-x: hidden;
+  font-family: 'Muller', sans-serif;
+  font-weight: 400;
+  background: #84459b;
+}
+
+.content {
+  margin-top: 327px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content__logo img {
+  width: 100%;
+}
+
+.content__name {
+  margin-top: 43px;
+  font-size: 52px;
+  line-height: 67px;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1080px) {
+  .content {
+    margin-top: 398px;
+  }
+  .content__name {
+    margin-top: 70px;
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .content__name {
+    font-size: 42px;
+    line-height: 57px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .content {
+    margin-top: 150px;
+  }
+  .content__name {
+    margin-top: 50px;
+    font-size: 32px;
+    line-height: 44px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .content__name {
+    margin-top: 30px;
+    font-size: 26px;
+    line-height: 34px;
+  }
+}

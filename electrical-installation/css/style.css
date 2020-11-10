@@ -1254,7 +1254,7 @@ body._lock {
   min-height: 1000px;
   padding-bottom: 41px;
   position: relative;
-  z-index: 1;
+  z-index: 99;
 }
 
 .main .button {
@@ -1269,6 +1269,10 @@ body._lock {
 
 .main_organisations {
   background: url("../img/main-bg_organisations.jpg") no-repeat center/cover;
+}
+
+.main_organisations .main__title span {
+  display: block;
 }
 
 .main__row {
@@ -1619,6 +1623,15 @@ body._lock {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  margin-bottom: 30px;
+}
+
+.header-wrapper._sticky-wrapper + .main__row {
+  margin-top: 183px;
+}
+
+.header__logo img {
+  max-width: none;
 }
 
 .header__logo-wrapper {
@@ -1635,16 +1648,8 @@ body._lock {
   font-family: "Futura PT - Book", sans-serif;
   font-size: 16px;
   line-height: 1.2;
-  max-width: 218px;
+  max-width: 198px;
   margin-left: 25px;
-}
-
-.header__logo-text_mobile {
-  display: none;
-  font-size: 14px;
-  max-width: 152px;
-  margin-left: 0;
-  margin-top: 11px;
 }
 
 .header__rating {
@@ -1654,7 +1659,7 @@ body._lock {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 39px;
+  margin-left: 27px;
 }
 
 .header__rating-image {
@@ -1887,6 +1892,10 @@ body._lock {
 
 .header__phone {
   margin-top: 3px;
+  color: #fff;
+  font-family: "Futura PT - Book", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .header__phone a {
@@ -1906,7 +1915,6 @@ body._lock {
 .header__navigation {
   border-radius: 10px;
   background-color: #fff;
-  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1916,6 +1924,18 @@ body._lock {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 200;
+}
+
+.header__navigation._sticky {
+  position: fixed;
+  width: calc(100% - 20px);
+  max-width: 1200px;
+  top: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .header__navigation-list {
@@ -2249,6 +2269,7 @@ body._lock {
 
 .mobile-menu__contacts-wrapper .header__phone {
   line-height: 18px;
+  color: #333;
 }
 
 .mobile-menu__contacts-wrapper .header__phone:nth-child(n+2) {
@@ -2419,6 +2440,8 @@ body._lock {
   background-color: #ffffff;
   padding: 20px 45px 40px 20px;
   margin: 35px auto 0;
+  position: relative;
+  z-index: 0;
 }
 
 .quiz-man {
@@ -2430,6 +2453,7 @@ body._lock {
   border: 1px solid #efefef;
   background-color: #fafafa;
   position: relative;
+  z-index: -1;
 }
 
 .quiz-man__place {
@@ -2917,6 +2941,7 @@ body._lock {
   max-width: calc(100% - 90px);
   margin: 60px auto 0;
   position: relative;
+  z-index: 0;
 }
 
 .work__slider-arrows {
@@ -2983,6 +3008,15 @@ body._lock {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 calc(25% - 8px);
           flex: 0 0 calc(25% - 8px);
+  max-height: 145px;
+  opacity: 0.8;
+  -webkit-transition: opacity 0.1s linear;
+  -o-transition: opacity 0.1s linear;
+  transition: opacity 0.1s linear;
+}
+
+.work__images-item._active {
+  opacity: 1;
 }
 
 .work__images-item:nth-child(n+2) {
@@ -3069,6 +3103,10 @@ body._lock {
   font-weight: 400;
 }
 
+.work__list-item {
+  line-height: 1.2;
+}
+
 .work__list-item:nth-child(n+2) {
   margin-top: 7px;
 }
@@ -3125,6 +3163,7 @@ body._lock {
 .work__text-paragraph {
   margin-top: 11px;
   font-size: 18px;
+  line-height: 1.2;
   font-weight: 300;
 }
 
@@ -4108,14 +4147,15 @@ body._lock {
   overflow: hidden;
 }
 
-.reviews__item-button {
+.reviews__item-link {
   color: #38c15b;
   font-family: "Futura PT - Book", sans-serif;
   font-size: 16px;
   line-height: 15px;
   border-bottom: 1px dashed #38c15b;
-  padding: 0 1px 3px 1px;
+  display: inline-block;
   margin-top: 20px;
+  padding: 0 1px 3px 1px;
 }
 
 .quote-wrapper {
@@ -4745,8 +4785,10 @@ body._lock {
 .scheme__button {
   font-size: 18px;
   line-height: 17px;
+  text-align: center;
   width: 100%;
   min-width: 0;
+  display: inline-block;
   margin-top: 96px;
   padding: 19px 30px 18px;
 }
@@ -4869,7 +4911,16 @@ body._lock {
 
 .text-wrapper .text {
   font-size: 14px;
+  line-height: 1.2;
   margin-top: 24px;
+  overflow: hidden;
+}
+
+.text-wrapper .text._hidden {
+  height: 80px;
+  -webkit-line-clamp: 5;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
 }
 
 .text__title {
@@ -4883,6 +4934,7 @@ body._lock {
   border-bottom: 1px dashed rgba(51, 51, 51, 0.8);
   margin-top: 16px;
   padding: 1px 2px;
+  color: rgba(51, 51, 51, 0.6);
   display: inline-block;
   -webkit-transition: 0.3s ease-out;
   -o-transition: 0.3s ease-out;
@@ -5047,6 +5099,16 @@ body._lock {
 
 .footer__phone {
   line-height: 18px;
+  color: #333;
+  font-family: "Futura PT - Book", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.footer__phone-text {
+  font-size: 18px;
+  color: rgba(51, 51, 51, 0.6);
+  margin-bottom: 4px;
 }
 
 .footer__phone:nth-child(n+2) {
@@ -5055,7 +5117,7 @@ body._lock {
 
 .footer__phone a {
   color: #333;
-  font-family: "Futura PT - Book";
+  font-family: "Futura PT - Book", sans-serif;
   font-size: 18px;
   font-weight: 400;
 }
@@ -5580,6 +5642,14 @@ input[type="checkbox"]:checked ~ .fake:before {
             justify-content: center;
   }
 
+  .header-wrapper._sticky-wrapper + .main__row {
+    margin-top: 153px;
+  }
+
+  .header__logo img {
+    margin-top: 6px;
+  }
+
   .header__logo-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -5593,11 +5663,10 @@ input[type="checkbox"]:checked ~ .fake:before {
   }
 
   .header__logo-text {
-    display: none;
-  }
-
-  .header__logo-text_mobile {
-    display: block;
+    margin-left: 0;
+    margin-top: 11px;
+    font-size: 14px;
+    max-width: 152px;
   }
 
   .header__rating {
@@ -6227,6 +6296,9 @@ input[type="checkbox"]:checked ~ .fake:before {
 
   .thanks .main__button {
     padding: 31px 10px 31px 14px;
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .thanks .main__button .main__button-text {
@@ -6326,11 +6398,19 @@ input[type="checkbox"]:checked ~ .fake:before {
             justify-content: center;
   }
 
+  .header-wrapper._sticky-wrapper + .main__row {
+    margin-top: 162px;
+  }
+
+  .header__logo img {
+    max-width: 100%;
+  }
+
   .header__logo-wrapper {
     margin-top: 3px;
   }
 
-  .header__logo-text_mobile {
+  .header__logo-text {
     margin-top: 8px;
   }
 
@@ -7066,7 +7146,7 @@ input[type="checkbox"]:checked ~ .fake:before {
     max-width: calc(100% - 159px);
   }
 
-  .header__logo-text_mobile {
+  .header__logo-text {
     font-size: 12px;
   }
 
@@ -7154,6 +7234,10 @@ input[type="checkbox"]:checked ~ .fake:before {
 
   .fairness .company__advantage {
     min-height: 733px;
+  }
+
+  .price-list__name {
+    width: 218px;
   }
 
   .price-list__button-text {

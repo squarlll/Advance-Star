@@ -232,6 +232,11 @@ body {
   right: 39px;
   z-index: 100;
 }
+@media screen and (max-width: 1520px) {
+  .header__burger {
+    top: 60px;
+  }
+}
 
 .header__logo img {
   max-width: 100%;

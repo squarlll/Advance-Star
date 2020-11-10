@@ -365,6 +365,12 @@ body {
   color: #fff;
 }
 
+@media screen and (max-width: 670px) {
+  .first__title {
+    margin-bottom: 63px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .first__title {
     font-size: 50px;

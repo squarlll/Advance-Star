@@ -1,24 +1,20 @@
 $(document).ready(function(){
-	$('.work__images-item img').on('click', function(){
-		var workImagesItem = $(this).attr('src');
-		$(this).parents('.work__images').siblings('.work__main-image').children('picture').children('img').prop('src', workImagesItem);
-		$(this).parents('.work__images').siblings('.work__main-image').children('picture').children('source').prop('srcset', workImagesItem);
+	$('.schedule__tab_1').on('click', function(){
+		$(this).addClass('_active');
+		$(this).siblings().removeClass('_active');
+		$('.schedule_1').addClass('_active');
+		$('.schedule_1').siblings().removeClass('_active');
 	});
-
-	$('.header__dropdown').on('mouseenter', function(){
-		$(this).children('.header__dropdown-list').addClass('_visible');
-		$(this).on('mouseleave', function(){
-			$(this).children('.header__dropdown-list').removeClass('_visible');
-		});
+	$('.schedule__tab_2').on('click', function(){
+		$(this).addClass('_active');
+		$(this).siblings().removeClass('_active');
+		$('.schedule_2').addClass('_active');
+		$('.schedule_2').siblings().removeClass('_active');
 	});
-
-	$('.burger-wrapper').on('click', function(){
-		$(this).toggleClass('_active');
-		$('.header__mobile-menu').addClass('_active');
-		$('body').addClass('_lock');
-		$('.mobile-menu__close').on('click', function(){
-			$('.header__mobile-menu').removeClass('_active');
-			$('body').removeClass('_lock');
-		});
+	$('.schedule__tab_3').on('click', function(){
+		$(this).addClass('_active');
+		$(this).siblings().removeClass('_active');
+		$('.schedule_3').addClass('_active');
+		$('.schedule_3').siblings().removeClass('_active');
 	});
 });

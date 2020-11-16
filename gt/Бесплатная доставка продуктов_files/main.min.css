@@ -153,13 +153,13 @@ body {
 
 @media screen and (max-width: 414px) {
   #map{
-    height: 183px;
+    height: 183px!important;
   }
 }
 
 @media screen and (max-width: 375px) {
   #map{
-    height: 141px;
+    height: 141px!important;
   }
 }
 

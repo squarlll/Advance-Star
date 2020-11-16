@@ -64,13 +64,6 @@ body {
   min-width: 320px;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 1457px;
-  padding: 0 10px;
-  position: relative;
-}
-
 .greenContainer {
   background: -o-linear-gradient(273.01deg, #439600 37.56%, #285900 79.48%);
   background: linear-gradient(176.99deg, #439600 37.56%, #285900 79.48%);

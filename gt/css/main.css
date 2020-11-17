@@ -1172,18 +1172,6 @@ body {
   margin-left: 85px;
 }
 
-@media screen and (max-width: 767px) {
-  .why__content {
-    justify-content: space-between;
-  }
-  .why__item:first-child {
-    margin-right: 0;
-  }
-  .why__item:last-child {
-    margin-left: 0;
-  }
-}
-
 .why__subtitle {
   font-weight: normal;
   font-size: 23.5px;
@@ -1333,12 +1321,6 @@ body {
   .why {
     padding: 0 10px;
   }
-  .why__item:first-child {
-    margin-right: 10px;
-  }
-  .why__item:last-child {
-    margin-left: 13px;
-  }
   .why__subtitle {
     font-size: 9px;
     line-height: 12px;
@@ -1442,6 +1424,18 @@ body {
     order: 3;
     font-size: 18px;
     line-height: 22px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .why__content {
+    justify-content: space-between;
+  }
+  .why__item:first-child {
+    margin-right: 0;
+  }
+  .why__item:last-child {
+    margin-left: 0;
   }
 }
 

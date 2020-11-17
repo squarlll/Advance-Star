@@ -1160,6 +1160,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: calc(33.333% - 20px);
   max-width: calc(33.333% - 20px);
 }
 
@@ -1169,6 +1170,18 @@ body {
 
 .why__item:last-child {
   margin-left: 85px;
+}
+
+@media screen and (max-width: 767px) {
+  .why__content {
+    justify-content: space-between;
+  }
+  .why__item:first-child {
+    margin-right: 0;
+  }
+  .why__item:last-child {
+    margin-left: 0;
+  }
 }
 
 .why__subtitle {

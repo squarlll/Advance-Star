@@ -1160,7 +1160,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 247px;
+  max-width: 253px;
 }
 
 .why__item:first-child {

@@ -1430,6 +1430,10 @@ body {
   .why__content {
     justify-content: space-between;
   }
+  .why__item {
+    width: 33.333%;
+    max-width: 33.333%;
+  }
   .why__item:first-child {
     margin-right: 0;
   }

@@ -1050,11 +1050,11 @@ body {
 }
 
 .work__item:first-child {
-  margin-right: 156px;
+  margin-right: 141px;
 }
 
 .work__item:last-child {
-  margin-left: 171px;
+  margin-left: 141px;
 }
 
 .work__text {
@@ -1164,11 +1164,11 @@ body {
 }
 
 .why__item:first-child {
-  margin-right: 60px;
+  margin-right: 100px;
 }
 
 .why__item:last-child {
-  margin-left: 60px;
+  margin-left: 100px;
 }
 
 .why__subtitle {

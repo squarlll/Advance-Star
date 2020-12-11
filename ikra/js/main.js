@@ -1,16 +1,21 @@
 $(document).ready(function(){
 	$('.header__burger').on('click', function(){
 		$('body, html').toggleClass('_lock');
-		$('.header__container').toggleClass('_active');
+		$('.header__container_1').toggleClass('_active');
 		$('.close-button').on('click', function(){
 			$('body, html').removeClass('_lock');
-			$('.header__container').removeClass('_active');
+			$('.header__container_1').removeClass('_active');
 		});
 	});
 
 	$('.vote__readmore').on('click', function(){
 		$(this).toggleClass('_active');
 		$(this).siblings('.vote__text').toggleClass('_active');
+	});
+
+	$('.mobile-menu__list-item').on('click', function(){
+		$(this).toggleClass('_active');
+		$(this).siblings().removeClass('_active');
 	});
 });
 $('.vote__content').slick({

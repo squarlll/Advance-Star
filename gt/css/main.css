@@ -1098,6 +1098,9 @@ body {
     font-size: 15px;
     line-height: 19px;
   }
+  .work__subtitle {
+    max-width: 165px;
+  }
   .work__text-wrapper {
     height: 30px;
   }

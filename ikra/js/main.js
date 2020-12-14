@@ -17,6 +17,19 @@ $(document).ready(function(){
 		$(this).toggleClass('_active');
 		$(this).siblings().removeClass('_active');
 	});
+
+	$('.mobile-menu__date, .header__buy-button_mobile').on('click', function(){
+		$('.calendar-wrapper').addClass('_active');
+		$('.header__container_1').removeClass('_active');
+		$('.calendar-wrapper .close-button').on('click', function(){
+			$('.calendar-wrapper').removeClass('_active');
+		});
+	});
+});
+$('.calendar__slider').slick({
+	arrows:true,
+	slidesToShow:1,
+	slidesToScroll:1,
 });
 $('.vote__content').slick({
 	arrows:true,

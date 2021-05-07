@@ -8,11 +8,42 @@
 	<title>Товары из Китая</title>
 </head>
 <body>
+	<!-- Модальные окна -->
+	<div class="popup__wrapper">
+		<div class="popup__area"></div>
+		<div class="popup__body">
+			<div class="popup">
+				<button class="popup__close"><img src="./img/popup__close.png" alt=""></button>
+				<div class="popup__form-wrapper">
+					<h3 class="popup__title"><span>Оставьте свои контактные данные</span> и наш специалист перезвонит в течение 20 минут и проконсультирует Вас</h3>
+					<form class="popup__form">
+						<input type="text" class="popup__field" placeholder="Введите имя">
+						<input type="tel" class="popup__field" placeholder="+7 (___) ___-__-__">
+						<fieldset class="popup__radio-wrapper">
+							<input id="whatsapp2" type="radio" name="Модальное окно — Мессенджер" value="WhatsApp">
+							<label for="whatsapp2" class="popup__radio">
+								<svg width="16" height="16" class="popup__radio-image" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" fill="#363636"><g><g><path d="M256.064,0h-0.128C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104l98.4-31.456 C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z M405.024,361.504 c-6.176,17.44-30.688,31.904-50.24,36.128c-13.376,2.848-30.848,5.12-89.664-19.264C189.888,347.2,141.44,270.752,137.664,265.792 c-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624,26.176-62.304c6.176-6.304,16.384-9.184,26.176-9.184 c3.168,0,6.016,0.16,8.576,0.288c7.52,0.32,11.296,0.768,16.256,12.64c6.176,14.88,21.216,51.616,23.008,55.392 c1.824,3.776,3.648,8.896,1.088,13.856c-2.4,5.12-4.512,7.392-8.288,11.744c-3.776,4.352-7.36,7.68-11.136,12.352 c-3.456,4.064-7.36,8.416-3.008,15.936c4.352,7.36,19.392,31.904,41.536,51.616c28.576,25.44,51.744,33.568,60.032,37.024 c6.176,2.56,13.536,1.952,18.048-2.848c5.728-6.176,12.8-16.416,20-26.496c5.12-7.232,11.584-8.128,18.368-5.568 c6.912,2.4,43.488,20.48,51.008,24.224c7.52,3.776,12.48,5.568,14.304,8.736C411.2,329.152,411.2,344.032,405.024,361.504z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+								<span class="popup__radio-text">WhatsApp</span>
+							</label>
+							<input id="telegram2" type="radio" name="Модальное окно — Мессенджер" value="Telegram">
+							<label for="telegram2" class="popup__radio">
+								<svg width="16" height="14" class="popup__radio-image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve" fill="#363636"><g id="XMLID_496_"><path id="XMLID_497_" d="M5.299,144.645l69.126,25.8l26.756,86.047c1.712,5.511,8.451,7.548,12.924,3.891l38.532-31.412 c4.039-3.291,9.792-3.455,14.013-0.391l69.498,50.457c4.785,3.478,11.564,0.856,12.764-4.926L299.823,29.22 c1.31-6.316-4.896-11.585-10.91-9.259L5.218,129.402C-1.783,132.102-1.722,142.014,5.299,144.645z M96.869,156.711l135.098-83.207 c2.428-1.491,4.926,1.792,2.841,3.726L123.313,180.87c-3.919,3.648-6.447,8.53-7.163,13.829l-3.798,28.146 c-0.503,3.758-5.782,4.131-6.819,0.494l-14.607-51.325C89.253,166.16,91.691,159.907,96.869,156.711z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+								<span class="popup__radio-text">Telegram</span>
+							</label>
+						</fieldset>
+						<button class="popup__button button">Получить консультацию</button>
+						<p class="popup__agreement">Нажимая на кнопку вы даете согласие на обработку персональных данных</p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<!-- Главный экран -->
 	<main class="main" id="main">
 		<div class="main__container container">
 			<!-- Шапка -->
-			<header class="header">
+			<header class="header wow fadeInDown" data-wow-duration="0.6s">
 				<div class="header__company">
 					<a href="" class="header__logo"><img class="header__logo-image" src="./img/logo.png" alt="" width="102" height="61"></a>
 					<p class="header__description">Ваш надежный партнер  на территории Китая</p>
@@ -30,43 +61,43 @@
 						<a class="header__phone" href="8613168334937">+8 (613) 168334937</a>
 						<span class="header__phone-text">Сейчас работаем</span>
 					</div>
-					<button class="header__callback">Заказать звонок</button>
+					<button class="header__callback popup_button">Заказать звонок</button>
 				</div>
 			</header>
 			<div class="main__content">
 				<div class="main__row">
 					<div class="main__column">
-						<h1 class="main__title"><span>Товары из Китая</span> под “ключ” от 5001 с выкупом за 24 часа в любом количестве</h1>
-						<div class="main__services">
+						<h1 class="main__title wow fadeInLeft"><span>Товары из Китая</span> под “ключ” от 5001 с выкупом за 24 часа в любом количестве</h1>
+						<div class="main__services wow fadeInLeft" data-wow-delay="0.1s">
 							<div class="main__services-item-wrapper"><div class="main__services-item"><img src="./img/main-services-find.png" alt="">Подберем</div></div>
 							<div class="main__services-item-wrapper"><div class="main__services-item"><img src="./img/main-services-check.png" alt="">Проверим</div></div>
 							<div class="main__services-item-wrapper"><div class="main__services-item"><img src="./img/main-services-delivery.png" alt="">Доставим</div></div>
 						</div>
-						<p class="main__text">Вам не придется напоминать о выкупе, упаковке, или еще каких то задачах третьего порядка. <strong>Все задачи мы берем на себя!</strong></p>
-						<div class="main__button-wrapper">
+						<p class="main__text wow fadeInLeft" data-wow-delay="0.2s">Вам не придется напоминать о выкупе, упаковке, или еще каких то задачах третьего порядка. <strong>Все задачи мы берем на себя!</strong></p>
+						<div class="main__button-wrapper wow fadeInLeft" data-wow-delay="0.3s">
 							<a class="main__button button" href="#consultation">Получить бесплатную консультацию</a>
 						</div>
 					</div>
-					<div class="main__image"><img src="./img/main-image.png" alt="" width="609"></div>
+					<div class="main__image wow fadeInRight"><img src="./img/main-image.png" alt="" width="609"></div>
 				</div>
-				<div class="main__circles">
+				<div class="main__circles wow fadeIn">
 					<span class="main__circle"></span>
 					<span class="main__circle"></span>
 					<span class="main__circle"></span>
 				</div>
 				<div class="main__advantages">
-					<span class="main__advantages-pretitle">Ваш проводник на</span>
-					<h2 class="main__advantages-title title">Китайский рынок</h2>
+					<span class="main__advantages-pretitle wow fadeInUp">Ваш проводник на</span>
+					<h2 class="main__advantages-title title wow fadeInUp">Китайский рынок</h2>
 					<div class="main__advantages-row">
-						<div class="main__advantages-item">
+						<div class="main__advantages-item wow fadeInUp" data-wow-delay="0.2s">
 							<div class="main__advantages-name">Прозрачность</div>
 							<div class="main__advantages-text">Предоставляем онлайн - отчеты, документацию и отвечаем на все ваши вопросы, так часто, как это вам нужно</div>
 						</div>
-						<div class="main__advantages-item">
+						<div class="main__advantages-item wow fadeInUp" data-wow-delay="0.3s">
 							<div class="main__advantages-name">Без посредников</div>
 							<div class="main__advantages-text">Полностью берем всю работу на себя и всегда готовы выполнить свою работу на 100%</div>
 						</div>
-						<div class="main__advantages-item">
+						<div class="main__advantages-item wow fadeInUp" data-wow-delay="0.4s">
 							<div class="main__advantages-name">Официально</div>
 							<div class="main__advantages-text">Компания официально зарегистрирована на территории Китая. Работаем строго по договору</div>
 						</div>
@@ -85,41 +116,41 @@
 		<h2 class="steps__title title">Наша основная миссия - помощь бизнесу в оказании комплексных услуг</h2>
 		<p class="steps__subtitle subtitle">Необходимых для качественной доставки товара из Китая напрямую к вам</p>
 		<ul class="steps__list">
-			<ol class="steps__item-wrapper wow fadeInUp">
+			<ol class="steps__item-wrapper wow fadeInUp" data-wow-delay="0.15s">
 				<div class="steps__item">
 					<h3 class="steps__item-title">Поиск производителя товара в Китае</h3>
 					<p class="steps__item-subtitle">Находим любой товар по вашему техническому заданию, проведем переговоры с производством и уточняем все детали</p>
-					<button class="steps__item-button">Проконсультироваться</button>
+					<button class="steps__item-button popup_button">Проконсультироваться</button>
 				</div>
 				<div class="steps__item-number-wrapper">
 					<span class="steps__item-number"></span>
 				</div>
 			</ol>
-			<ol class="steps__item-wrapper wow fadeInUp">
+			<ol class="steps__item-wrapper wow fadeInUp" data-wow-delay="0.15s">
 				<div class="steps__item">
 					<h3 class="steps__item-title">Выкуп товара в Китае</h3>
 					<p class="steps__item-subtitle">Договариваемся о лучшей цене, выкупаем товар на наш склад. По приходу проверяем целостность коробок и упаковки товаров</p>
-					<button class="steps__item-button">Проконсультироваться</button>
+					<button class="steps__item-button popup_button">Проконсультироваться</button>
 				</div>
 				<div class="steps__item-number-wrapper">
 					<span class="steps__item-number"></span>
 				</div>
 			</ol>
-			<ol class="steps__item-wrapper wow fadeInUp">
+			<ol class="steps__item-wrapper wow fadeInUp" data-wow-delay="0.15s">
 				<div class="steps__item">
 					<h3 class="steps__item-title">Аудит производства или товара</h3>
 					<p class="steps__item-subtitle">На основании полученных данных аудита производителя вы сможете принять решение о дальнейшем сотрудничестве</p>
-					<button class="steps__item-button">Проконсультироваться</button>
+					<button class="steps__item-button popup_button">Проконсультироваться</button>
 				</div>
 				<div class="steps__item-number-wrapper">
 					<span class="steps__item-number"></span>
 				</div>
 			</ol>
-			<ol class="steps__item-wrapper wow fadeInUp">
+			<ol class="steps__item-wrapper wow fadeInUp" data-wow-delay="0.15s">
 				<div class="steps__item">
 					<h3 class="steps__item-title">Контроль отгрузки доставка товаров из Китая</h3>
 					<p class="steps__item-subtitle">Проверка продукции в Китае, упаковка и доставка товара в любую точку России и СНГ</p>
-					<button class="steps__item-button">Проконсультироваться</button>
+					<button class="steps__item-button popup_button">Проконсультироваться</button>
 				</div>
 				<div class="steps__item-number-wrapper">
 					<span class="steps__item-number"></span>
@@ -369,12 +400,12 @@
 				<input type="text" class="callback__field" placeholder="Введите имя">
 				<input type="tel" class="callback__field" placeholder="+7 (___) ___-__-__">
 				<fieldset class="callback__radio-wrapper">
-					<input id="whatsapp1" type="radio" name="Вторая форма — Мессенджер" value="WhatsApp1">
+					<input id="whatsapp1" type="radio" name="Вторая форма — Мессенджер" value="WhatsApp">
 					<label for="whatsapp1" class="callback__radio">
 						<svg width="16" height="16" class="callback__radio-image" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" fill="#bbbaba"><g><g><path d="M256.064,0h-0.128C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104l98.4-31.456 C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z M405.024,361.504 c-6.176,17.44-30.688,31.904-50.24,36.128c-13.376,2.848-30.848,5.12-89.664-19.264C189.888,347.2,141.44,270.752,137.664,265.792 c-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624,26.176-62.304c6.176-6.304,16.384-9.184,26.176-9.184 c3.168,0,6.016,0.16,8.576,0.288c7.52,0.32,11.296,0.768,16.256,12.64c6.176,14.88,21.216,51.616,23.008,55.392 c1.824,3.776,3.648,8.896,1.088,13.856c-2.4,5.12-4.512,7.392-8.288,11.744c-3.776,4.352-7.36,7.68-11.136,12.352 c-3.456,4.064-7.36,8.416-3.008,15.936c4.352,7.36,19.392,31.904,41.536,51.616c28.576,25.44,51.744,33.568,60.032,37.024 c6.176,2.56,13.536,1.952,18.048-2.848c5.728-6.176,12.8-16.416,20-26.496c5.12-7.232,11.584-8.128,18.368-5.568 c6.912,2.4,43.488,20.48,51.008,24.224c7.52,3.776,12.48,5.568,14.304,8.736C411.2,329.152,411.2,344.032,405.024,361.504z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
 						<span class="callback__radio-text">WhatsApp</span>
 					</label>
-					<input id="telegram1" type="radio" name="Вторая форма — Мессенджер" value="Telegram1">
+					<input id="telegram1" type="radio" name="Вторая форма — Мессенджер" value="Telegram">
 					<label for="telegram1" class="callback__radio">
 						<svg width="16" height="14" class="callback__radio-image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve" fill="#bbbaba"><g id="XMLID_496_"><path id="XMLID_497_" d="M5.299,144.645l69.126,25.8l26.756,86.047c1.712,5.511,8.451,7.548,12.924,3.891l38.532-31.412 c4.039-3.291,9.792-3.455,14.013-0.391l69.498,50.457c4.785,3.478,11.564,0.856,12.764-4.926L299.823,29.22 c1.31-6.316-4.896-11.585-10.91-9.259L5.218,129.402C-1.783,132.102-1.722,142.014,5.299,144.645z M96.869,156.711l135.098-83.207 c2.428-1.491,4.926,1.792,2.841,3.726L123.313,180.87c-3.919,3.648-6.447,8.53-7.163,13.829l-3.798,28.146 c-0.503,3.758-5.782,4.131-6.819,0.494l-14.607-51.325C89.253,166.16,91.691,159.907,96.869,156.711z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
 						<span class="callback__radio-text">Telegram</span>

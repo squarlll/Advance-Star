@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" href="./css/animate.css">
 	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/intlTelInput.css">
 	<title>Товары из Китая</title>
 </head>
 <body>
@@ -286,7 +287,7 @@
 
 				<form class="consultation__form">
 					<input type="text" class="consultation__field" placeholder="Введите имя">
-					<input type="tel" class="consultation__field" placeholder="+7 (___) ___-__-__">
+					<input id="mobile-number1" name="phone1" type="tel" class="consultation__field">
 					<fieldset class="consultation__radio-wrapper">
 						<input id="whatsapp" type="radio" name="Мессенджер" value="WhatsApp">
 						<label for="whatsapp" class="consultation__radio">
@@ -398,7 +399,7 @@
 
 			<form class="callback__form">
 				<input type="text" class="callback__field" placeholder="Введите имя">
-				<input type="tel" class="callback__field" placeholder="+7 (___) ___-__-__">
+				<input id="mobile-number2" type="tel" class="callback__field">
 				<fieldset class="callback__radio-wrapper">
 					<input id="whatsapp1" type="radio" name="Вторая форма — Мессенджер" value="WhatsApp">
 					<label for="whatsapp1" class="callback__radio">
@@ -472,6 +473,14 @@
 	<!-- scripts -->
 	<script src="./js/jquery-3.5.1.min.js"></script>
 	<script src="./js/wow.min.js"></script>
+	<script src="./js/intlTelInput-jquery.min.js"></script>
+	<script src="./js/jquery.maskedinput.min.js"></script>
+	<script>
+		$("#mobile-number, #mobile-number1, #mobile-number2").intlTelInput({
+		  hiddenInput: "full_phone",
+		  utilsScript: "./js/utils.js",
+		});
+	</script>
 	<script>
 		new WOW().init();
 

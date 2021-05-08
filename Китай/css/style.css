@@ -368,6 +368,9 @@ body._lock {
     margin-top: 228rem;
   }
 }
+.popup__form .iti {
+  margin-top: 20rem;
+}
 .popup__form-wrapper {
   position: relative;
   z-index: 2;
@@ -2711,6 +2714,9 @@ body._lock {
     margin-top: 369rem;
   }
 }
+.consultation__form .iti {
+  margin-top: 20rem;
+}
 .consultation__form-wrapper {
   background: #141414;
   box-shadow: 3rem 7rem 27rem 0 rgba(0, 0, 0, 0.2);
@@ -3257,6 +3263,9 @@ body._lock {
   max-width: 272rem;
   margin: 49rem auto 0;
 }
+.callback__form .iti {
+  margin-top: 20rem;
+}
 .callback__form-wrapper {
   background-color: #fefefe;
   box-shadow: 5rem 12rem 27rem 0 rgba(0, 0, 0, 0.14);
@@ -3297,7 +3306,7 @@ body._lock {
   font-size: 14.2rem;
   line-height: 1;
   font-weight: 200;
-  color: #d1d1d1;
+  color: #010101;
 }
 .callback__field::placeholder {
   color: #080808;

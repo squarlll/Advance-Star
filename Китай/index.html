@@ -16,9 +16,9 @@
 				<button class="popup__close"><img src="./img/popup__close.png" alt=""></button>
 				<div class="popup__form-wrapper">
 					<h3 class="popup__title"><span>Оставьте свои контактные данные</span> и наш специалист перезвонит в течение 20 минут и проконсультирует Вас</h3>
-					<form class="popup__form">
+					<form class="popup__form" action="">
 						<input type="text" class="popup__field" placeholder="Введите имя">
-						<input type="tel" class="popup__field" placeholder="+7 (___) ___-__-__">
+						<input name="phone" type="tel" id="mobile-number" class="popup__field">
 						<fieldset class="popup__radio-wrapper">
 							<input id="whatsapp2" type="radio" name="Модальное окно — Мессенджер" value="WhatsApp">
 							<label for="whatsapp2" class="popup__radio">
@@ -442,7 +442,7 @@
 					<li class="footer__phone"><a href="tel:+79608372792">+7 (960) 837-27-92</a></li>
 					<li class="footer__phone"><a href="tel:88482623396">8 (8482) 62-33-96</a></li>
 				</ul>
-				<button class="footer__callback">Обратный звонок</button>
+				<button class="footer__callback popup_button">Обратный звонок</button>
 			</div>
 		</div>
 	</footer>
